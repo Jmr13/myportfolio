@@ -3,6 +3,7 @@
     <h1>
       i am jomar gamayan
     </h1>
+    <br />
     <h2>
       ・designer/coder・
     </h2>

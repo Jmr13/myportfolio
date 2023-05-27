@@ -14,7 +14,7 @@
             id: 2, 
             school: 'Bagong Barrio Senior High School' , 
             level: 'Senior HS' ,
-            course: 'ICT major in Animation and Illustration+', 
+            course: 'ICT major in Animation and Illustration', 
             year: '2017-2019'
           },
           { 
@@ -31,6 +31,19 @@
             course: '', 
             year: '2007-2013'
           }
+        ],
+        experienceBackgrounds: [
+          { 
+            id: 1, 
+            role: 'Web Developer' , 
+            company: 'Oikos Technologies' ,
+            description: [
+              'Building the frontend structure using Laravel framework',
+              'Generating documentation that outlines the recent updates in frontend development',
+              'Carrying out thorough testing and troubleshooting to guarantee the website operates smoothly and efficiently',
+              'Integrating front-end elements with back-end web services and APIs'
+            ]
+          }
         ]
       }
     }
@@ -39,27 +52,11 @@
 <template>
   <div>
     <SettingsThemeSwitcher />
-    <div class="title">
-      <h1>Education</h1>
-    </div>
-    <EducationTimelineDetails v-for="eduBackground in eduBackgrounds" :key="eduBackground.id" :eduBackground="eduBackground" />
-    <div class="title">
-      <h1>Experiences</h1>
-    </div>
+    <HeaderTitle title="Education" />
+    <BackgroundEducationDetails v-for="eduBackground in eduBackgrounds" :key="eduBackground.id" :eduBackground="eduBackground" />
+    <HeaderTitle title="Experience" />
+    <BackgroundExperienceDetails v-for="experienceBackground in experienceBackgrounds" :key="experienceBackground.id" :experienceBackground="experienceBackground"/>
+    <HeaderTitle title="Certificates" />
     <NavigationBottomBar />
   </div>
 </template>
-<style scoped>
-  h1 {
-    color: var(--secondary-color);
-    background-color: var(--primary-color);
-    padding-right: 4vw;
-  }
-  .title {
-    display: flex;
-    justify-content: flex-start;
-    width: 100%;
-    background-color: var(--secondary-color);
-    margin-bottom: 10vw;
-  }
-</style>

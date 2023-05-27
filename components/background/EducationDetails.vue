@@ -15,6 +15,10 @@
           <pre>    ・{{ eduBackground.school }}・</pre>
         </h4>
         <br />
+        <h5 v-if="eduBackground.course">
+          <pre>        {{ eduBackground.course }}</pre>
+        </h5>
+        <br />
         <hr />
         <br />
       </div>
