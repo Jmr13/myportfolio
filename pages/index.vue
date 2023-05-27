@@ -15,7 +15,7 @@
   .dark-mode {
   	--primary-color: #252525;
   	--secondary-color: white;
-  	--shadow: -4px 3px 2px rgba(192,192,192,0.3);
+  	--shadow: -4px 3px 2px rgba(0,0,0,0.3);
   }
   ::-moz-selection {
     color: var(--primary-color);
@@ -54,9 +54,8 @@
   	color: var(--alt-color);
   	font-family: 'Source Serif Pro', serif;
     font-weight: 400;
-    padding: 2vh 5vw 10vh 5vw;
+    padding: 2vh 5vw 20vh 5vw;
     color: var(--secondary-color);
-    text-shadow: var(--shadow);
   }
   button, a{
     all: unset;

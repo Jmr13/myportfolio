@@ -50,5 +50,6 @@
     background-color: var(--secondary-color);
     color: var(--primary-color);
     border-radius: var(--rounded);
+    text-shadow: var(--shadow);
   }
 </style>

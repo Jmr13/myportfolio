@@ -62,8 +62,10 @@
   .router-link-active {
     background-color: var(--secondary-color);
     color: var(--primary-color);
+    text-shadow: var(--shadow);
   }
   .router-link-active currentSvg {
     fill: var(--primary-color);
+    text-shadow: var(--shadow);
   }
 </style>

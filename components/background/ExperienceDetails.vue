@@ -11,13 +11,13 @@
           <div class="line"></div>
         </div>
         <div>
-          <h3>{{ experienceBackground.role }}</h3>
+          <h2>{{ experienceBackground.role }}</h2>
           <br />
-          <h5>{{ experienceBackground.company }}</h5>
+          <h4>{{ experienceBackground.company }}</h4>
           <br />
-          <h6 v-for="description in experienceBackground.description">
+          <h5 v-for="description in experienceBackground.description">
             ・{{ description }}
-          </h6>
+          </h5>
         </div>
       </div>
     </div>
@@ -47,5 +47,8 @@
     background-color: var(--secondary-color);
     flex-grow: 1;
     transform: scaleY(1.25);
+  }
+  h4 {
+    text-decoration-line: underline;
   }
 </style>

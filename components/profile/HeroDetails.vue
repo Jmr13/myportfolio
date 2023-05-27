@@ -12,7 +12,7 @@
     </h2>
     <br />
     <p>
-      A passionate developer with strong foundation in design. Well-organized and
+      a passionate developer with strong foundation in design. Well-organized and
       motivated. Currently a frontend developer, hoping to be full stack developer.
     </p>
   </div>
@@ -33,5 +33,6 @@
     color: var(--primary-color);
     padding: 1vh 0;
     border-radius: var(--rounded);
+    text-shadow: var(--shadow);
   }
 </style>
