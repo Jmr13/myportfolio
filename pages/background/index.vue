@@ -39,11 +39,27 @@
 <template>
   <div>
     <SettingsThemeSwitcher />
-    <h1>Education</h1>
-    <br />
+    <div class="title">
+      <h1>Education</h1>
+    </div>
     <EducationTimelineDetails v-for="eduBackground in eduBackgrounds" :key="eduBackground.id" :eduBackground="eduBackground" />
-    <br />
-    <h1>Achievements</h1>
+    <div class="title">
+      <h1>Experiences</h1>
+    </div>
     <NavigationBottomBar />
   </div>
 </template>
+<style scoped>
+  h1 {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    padding-right: 4vw;
+  }
+  .title {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    background-color: var(--secondary-color);
+    margin-bottom: 10vw;
+  }
+</style>
