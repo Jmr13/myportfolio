@@ -18,19 +18,33 @@
   	--shadow: -4px 3px 2px rgba(192,192,192,0.3);
   }
   ::-moz-selection {
-    color: var(--secondary-color);
-    background: #1e1302;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
   }
   ::selection {
-    color: var(--secondary-color);
-    background: #1e1302;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
   }
   * {
     padding: 0;
     margin: 0;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     box-sizing: border-box;
-    border: 1px solid black;
+    /*
+    border: 1px solid var(--secondary-color);
+    */
+  }
+  *::before {
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    box-sizing: border-box;
+  }
+  *::after {
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    box-sizing: border-box;
   }
   html {
     scroll-behavior: smooth;
@@ -38,6 +52,11 @@
   body {
   	background-color: var(--primary-color);
   	color: var(--alt-color);
+  	font-family: 'Source Serif Pro', serif;
+    font-weight: 400;
+    padding: 2vh 5vw 10vh 5vw;
+    color: var(--secondary-color);
+    text-shadow: var(--shadow);
   }
   button, a{
     all: unset;

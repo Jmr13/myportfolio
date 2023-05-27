@@ -5,9 +5,9 @@
         <i class="ri-user-2-line"></i>
         <h5>・profile・</h5>
       </NuxtLink>
-      <NuxtLink to="/education">
+      <NuxtLink to="/background">
         <i class="ri-building-line"></i>
-        <h5>・education・</h5>
+        <h5>・background・</h5>
       </NuxtLink>
       <NuxtLink to="/projects">
         <i class="ri-git-repository-line"></i>
@@ -35,7 +35,7 @@
     border-radius: var(--rounded);
     z-index: 10;
     outline: 2px solid 	var(--secondary-color);
-    text-shadow: var(--shadow);
+    background-color: var(--primary-color);
   }
   nav a {
     display: flex;

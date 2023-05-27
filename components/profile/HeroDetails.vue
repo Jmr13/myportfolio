@@ -10,7 +10,10 @@
       ・frontend developer・
     </h2>
     <br />
-    <p>Nice to meet you!</p>
+    <p>
+      A passionate developer with strong foundation in design. Well-organized and
+      motivated. Currently a frontend developer, hoping to be full stack developer.
+    </p>
   </div>
 </template>
 <style scoped>
@@ -19,10 +22,7 @@
     align-items: center;
     text-align: center;
     overflow: none;
-    font-family: 'Source Serif Pro', serif;
-    font-weight: 400;
     color: var(--secondary-color);
-    text-shadow: var(--shadow);
     filter: blur(0.25px);
     height: 100%;
   }
@@ -30,7 +30,6 @@
     font-size: 2rem;
     background-color: var(--secondary-color);
     color: var(--primary-color);
-    margin: 0 2vw;
     padding: 1vh 0;
     border-radius: var(--rounded);
   }
