@@ -1,6 +1,3 @@
-<script setup>
-  const colorMode = useColorMode()
-</script>
 <template>
   <div>
     <select v-model="$colorMode.preference">
