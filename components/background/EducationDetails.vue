@@ -5,28 +5,31 @@
 </script>
 <template>
    <div>
-      <div>
-        <div class="header">
-          <h1 class="year">{{ eduBackground.year }}</h1>
-          <h5 class="level">{{ eduBackground.level }}</h5>
-          <br />
-        </div>
-        <h4>
-          <pre>    ・{{ eduBackground.school }}・</pre>
-        </h4>
-        <br />
-        <h5 v-if="eduBackground.course">
-          <pre>        {{ eduBackground.course }}</pre>
-        </h5>
-        <br />
-        <hr />
+      <div class="header">
+        <h1 class="year">{{ eduBackground.year }}</h1>
+        <h5 class="level">{{ eduBackground.level }}</h5>
         <br />
       </div>
+      <h4>
+        <pre>    ・{{ eduBackground.school }}・</pre>
+      </h4>
+      <br />
+      <h5 v-if="eduBackground.course">
+        <pre>        {{ eduBackground.course }}</pre>
+      </h5>
+      <br />
+      <hr />
    </div>
 </template>
 <style scoped>
-  div div {
+  div {
     color: var(--secondary-color);
+    margin: 2vh 0;
+  }
+  hr {
+    height: 0.25vh;
+    background-color: var(--secondary-color);
+    border: none;
   }
   .header {
     display: flex;

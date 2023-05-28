@@ -6,7 +6,7 @@
 <template>
     <div>
       <div class="container">
-        <img :src="certificationBackground.link" alt="" />
+        <img :src="certificationBackground.link" alt="certificationBackground.title" loading="lazy"/>
         <h5 class="year">{{ certificationBackground.date }}</h5>
         <br />
       </div>

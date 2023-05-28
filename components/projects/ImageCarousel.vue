@@ -4,9 +4,11 @@
   }
 </script>
 <template>
-  <div>
-    <h1>・Toka・</h1>
-    <p>A Simple PWA To-do list App</p>
+  <div class="container">
+    <h1>・{{ project.name }}・</h1>
+    <p>{{ project.description }}</p>
+    <br />
+    <a v-if="project.link"  :href="project.link" target="_blank" class="link">{{ project.link }}</a>
     <br />
     <div class="carousel">
   		<div class="carousel_slides">
@@ -21,6 +23,9 @@
   </div>
 </template>
 <style scoped>
+  .container {
+    margin-top: 2vh;
+  }
 	.carousel {
 		display: flex;
 		justify-content: center;
@@ -66,8 +71,13 @@
 	.carousel_slider > a:hover {
 		background-color: var(--secondary-color);
 	}
-	h1 , p {
-	  width: 100%;
+	h1 , p{
+	  display: block;
 	  text-align: center;
+	}
+	.link {
+	  display: block;
+	  text-align: center;
+	  text-decoration: underline;
 	}
 </style>

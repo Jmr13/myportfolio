@@ -4,6 +4,7 @@
       <option value="system">System &#9881;</option>
       <option value="light">Light &#9788;</option>
       <option value="dark">Dark &#9789;</option>
+      <option value="sepia">Sepia &#167;</option>
     </select>
   </div>
 </template>

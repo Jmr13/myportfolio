@@ -19,6 +19,6 @@
     justify-content: flex-start;
     width: 100%;
     background-color: var(--secondary-color);
-    margin-bottom: 10vw;
+    margin: 10vw 0;
   }
 </style>
