@@ -1,3 +1,20 @@
+<script setup>
+  const emailRes = ref()
+  const gmailRes = ref()
+  const errors = ref()
+  
+  async function sendEmail () {
+    emailRes.value = await $fetch('/api/mail').catch((err) => {
+      errors.value = err
+    })
+  }
+  
+  async function sendGmail () {
+    gmailRes.value = await $fetch('/api/gmail').catch((err) => {
+      errors.value = err
+    })
+  }
+</script>
 <template>
   <div>
     <div class="container">
@@ -38,28 +55,7 @@
     </div>
   </div>
 </template>
-
-<script setup>
-import { ref } from 'vue'
-
-const emailRes = ref()
-const gmailRes = ref()
-const errors = ref()
-
-async function sendEmail () {
-  emailRes.value = await $fetch('/api/mail').catch((err) => {
-    errors.value = err
-  })
-}
-
-async function sendGmail () {
-  gmailRes.value = await $fetch('/api/gmail').catch((err) => {
-    errors.value = err
-  })
-}
-</script>
-
-<style>
+<style scoped>
 .container {
   height: 1000px;
   position: relative;

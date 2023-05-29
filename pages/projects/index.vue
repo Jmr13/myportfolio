@@ -1,41 +1,35 @@
-<script>
-  export default {
-    data() {
-      return {
-        thesis_capstones: [
-          { 
-            id: 1, 
-            name: 'E-Dikta' , 
-            description: 'A capstone project for the university degree. E-Dikta is an application that helps the visually impaired with reading printed texts. It converts recognized texts into speech output. Uses OpenCV for the Edge detection algorithm and Google ML Kit for Text recognition' ,
-            link: '',
-            images: [
-              '/projects/e-dikta/1.png',
-              '/projects/e-dikta/2.png',
-              '/projects/e-dikta/3.png',
-              '/projects/e-dikta/4.png',
-              '/projects/e-dikta/5.png',
-              '/projects/e-dikta/6.png'
-            ], 
-          },
-        ],
-        personalprojects: [
-          { 
-            id: 1, 
-            name: 'Toka' , 
-            description: 'A Simple PWA To-do list App. This is the PWA demonstrated in our seminar' ,
-            link: 'https://toka-mobile.netlify.app/',
-            images: [
-              'https://raw.githubusercontent.com/Jmr13/Toka/main/assets/pwa-assets/screenshots/1.png',
-              'https://raw.githubusercontent.com/Jmr13/Toka/main/assets/pwa-assets/screenshots/2.png',
-              'https://raw.githubusercontent.com/Jmr13/Toka/main/assets/pwa-assets/screenshots/3.png',
-              'https://raw.githubusercontent.com/Jmr13/Toka/main/assets/pwa-assets/screenshots/4.png',
-              'https://raw.githubusercontent.com/Jmr13/Toka/main/assets/pwa-assets/screenshots/5.png'
-            ], 
-          },
-        ]
-      }
+<script setup>
+  const thesis_capstones = [
+    { 
+      id: 1, 
+      name: 'E-Dikta' , 
+      description: 'A capstone project for the university degree. E-Dikta is an application that helps the visually impaired with reading printed texts. It converts recognized texts into speech output. Uses OpenCV for the Edge detection algorithm and Google ML Kit for Text recognition' ,
+      link: '',
+      images: [
+        '/projects/e-dikta/1.png',
+        '/projects/e-dikta/2.png',
+        '/projects/e-dikta/3.png',
+        '/projects/e-dikta/4.png',
+        '/projects/e-dikta/5.png',
+        '/projects/e-dikta/6.png'
+      ] 
     }
-  }
+  ];
+  const personalprojects = [
+    { 
+      id: 1, 
+      name: 'Toka' , 
+      description: 'A Simple PWA To-do list App. This is the PWA demonstrated in our seminar' ,
+      link: 'https://toka-mobile.netlify.app/',
+      images: [
+        'https://raw.githubusercontent.com/Jmr13/Toka/main/assets/pwa-assets/screenshots/1.png',
+        'https://raw.githubusercontent.com/Jmr13/Toka/main/assets/pwa-assets/screenshots/2.png',
+        'https://raw.githubusercontent.com/Jmr13/Toka/main/assets/pwa-assets/screenshots/3.png',
+        'https://raw.githubusercontent.com/Jmr13/Toka/main/assets/pwa-assets/screenshots/4.png',
+        'https://raw.githubusercontent.com/Jmr13/Toka/main/assets/pwa-assets/screenshots/5.png'
+      ]
+    }
+  ]
 </script>
 <template>
   <div>
