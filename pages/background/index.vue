@@ -142,6 +142,20 @@
             date: 'October 2020' ,
             link: '/background/GitReadyWithVC.png'
           },
+        ],
+        awardsBackgrounds: [
+          { 
+            id: 1, 
+            title: 'Top 15 Finalist from the recent Appcon 2022' , 
+            date: 'April 2023' ,
+            link: '/background/Otis.jpg'
+          },
+          { 
+            id: 2, 
+            title: 'First place in DOST R&D Conference: Scientific Poster Competition' , 
+            date: 'December 2022' ,
+            link: '/background/DOST.png'
+          },
         ]
       }
     }
@@ -154,7 +168,9 @@
     <BackgroundEducationDetails v-for="eduBackground in eduBackgrounds" :key="eduBackground.id" :eduBackground="eduBackground" />
     <HeaderTitle title="experience" />
     <BackgroundExperienceDetails v-for="experienceBackground in experienceBackgrounds" :key="experienceBackground.id" :experienceBackground="experienceBackground"/>
-    <HeaderTitle title="certificates" />
+    <HeaderTitle title="awards" />
+    <BackgroundCertificationDetails v-for="award in awardsBackgrounds" :key="award.id" :certificationBackground="award"/>
+    <HeaderTitle title="webinars/seminars" />
     <BackgroundCertificationDetails v-for="certificationBackground in certificationBackgrounds" :key="certificationBackground.id" :certificationBackground="certificationBackground"/>
     <NavigationBottomBar />
   </div>

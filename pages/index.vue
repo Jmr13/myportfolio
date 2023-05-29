@@ -15,12 +15,10 @@
   .dark-mode {
   	--primary-color: #252525;
   	--secondary-color: white;
-  	--shadow: -4px 3px 2px rgba(0,0,0,0.3);
   }
   .sepia-mode {
     --primary-color: #f1e7d0;
   	--secondary-color: #433422;
-  	--shadow: -4px 3px 2px rgba(0,0,0,0.3);
   }
   ::-moz-selection {
     color: var(--primary-color);

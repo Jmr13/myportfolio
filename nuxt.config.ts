@@ -21,5 +21,11 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/color-mode',
     '@nuxtjs/device',
-  ]
+    'nuxt-mailer'
+  ],
+  runtimeConfig: {
+    mailerUser: '',
+    mailerPass: '',
+    mailerLog: '',  
+  }
 })

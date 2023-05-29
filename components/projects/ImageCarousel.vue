@@ -12,13 +12,13 @@
     <br />
     <div class="carousel">
   		<div class="carousel_slides">
-  			<div v-for="(image , index) in project.images" :id=" 'carousel_slides_' + index ">
+  			<div v-for="(image , index) in project.images" :id=" 'carousel_slides_' + project.name + index ">
   				<img :src="image" alt="image" />
   			</div>
   		</div>
   	</div>
   	<div v-if="$device.isDesktop" class="carousel_slider">
-			<a v-for="(image , index) in project.images" :href=" '#carousel_slides_' + index " />
+			<a v-for="(image , index) in project.images" :href=" '#carousel_slides_' + project.name + index " />
 		</div>
   </div>
 </template>
@@ -31,6 +31,7 @@
 		justify-content: center;
 		align-items: center;
 		position: relative;
+		padding: 1vh 2vw;
 	}
 	.carousel_slides {
 		display: flex;
@@ -55,6 +56,7 @@
 	}
 	.carousel_slides > div > img {
 		width: 100%;
+		box-shadow: var(--shadow);
 	}
 	.carousel_slider {
 		display: flex;

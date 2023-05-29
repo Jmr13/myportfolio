@@ -6,7 +6,7 @@
           { 
             id: 1, 
             name: 'E-Dikta' , 
-            description: 'A capstone project for the university degree. It converts recognized texts into speech output. E-Dikta is an application that helps the visually impaired with reading printed texts. Uses OpenCV for the Edge detection algorithm and Google ML Kit for Text recognition' ,
+            description: 'A capstone project for the university degree. E-Dikta is an application that helps the visually impaired with reading printed texts. It converts recognized texts into speech output. Uses OpenCV for the Edge detection algorithm and Google ML Kit for Text recognition' ,
             link: '',
             images: [
               '/projects/e-dikta/1.png',
