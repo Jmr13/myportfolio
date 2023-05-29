@@ -44,118 +44,146 @@
     }
   ]
   
-  const certificationBackgrounds = [
+  const webinarSeminarBackgrounds = [
     { 
       id: 1, 
       title: 'Data mining through Jamovi statistical tool' , 
       date: 'May 2023' ,
-      link: '/background/JamoviStatisticalTool.jpg'
+      source: '/background/JamoviStatisticalTool.jpg' ,
+      link: ''
     },
     { 
       id: 2, 
       title: 'The future of NFC: Emerging trends and Possibilities' , 
       date: 'April 2023' ,
-      link: '/background/FutureOfNFC.jpg'
+      source: '/background/FutureOfNFC.jpg' ,
+      link: ''
     },
     { 
       id: 3, 
       title: 'Design patterns using Java technology' , 
       date: 'April 2023' ,
-      link: '/background/DesignPatterns.jpg'
+      source: '/background/DesignPatterns.jpg' ,
+      link: ''
     },
     { 
       id: 4, 
       title: 'AI 101: Introduction to Artificial Intelligence' , 
       date: 'April 2023' ,
-      link: '/background/IntroToAI.png'
+      source: '/background/IntroToAI.png' ,
+      link: ''
     },
     { 
       id: 5, 
       title: 'Protecting your digital fortresses: The essentials of Cybersecurity' , 
       date: 'April 2023' ,
-      link: '/background/ProtectingYourDigitalFortresses.jpg'
+      source: '/background/ProtectingYourDigitalFortresses.jpg' , 
+      link: ''
     },
     { 
       id: 6, 
       title: 'Smart home Automation using IoT and Android technology' , 
       date: 'March 2023' ,
-      link: '/background/SmartHomeAutomation.png'
+      source: '/background/SmartHomeAutomation.png' ,
+      link: ''
     },
     {
       id: 7, 
       title: 'Introduction to Internet of Things' ,
       date: 'March 2023' ,
-      link: '/background/IntroToIoT.png'
+      source: '/background/IntroToIoT.png' ,
+      link: ''
     },
     { 
       id: 8, 
       title: 'Blockchain 101 Webinar' , 
       date: 'January 2023' ,
-      link: '/background/Blockchain101.png'
+      source: '/background/Blockchain101.png' ,
+      link: ''
     },
     { 
       id: 9, 
       title: 'Web 3.0 101 Webinar' , 
       date: 'January 2023' ,
-      link: '/background/Web3.0101.png'
+      source: '/background/Web3.0101.png' ,
+      link: ''
     },
     { 
       id: 10, 
       title: 'Community Ignite Series Episode #66: Intro to analytics on AWS' , 
       date: 'November 2022' ,
-      link: '/background/IntroToAnalytics.png'
+      source: '/background/IntroToAnalytics.png' ,
+      link: ''
     },
     { 
       id: 11, 
       title: 'Community Ignite Series Episode #67: Introduction to big data and analytics' , 
       date: 'November 2022' ,
-      link: '/background/BigDataAndAnalytics.png'
+      source: '/background/BigDataAndAnalytics.png' ,
+      link: ''
     },
     { 
       id: 12, 
       title: 'Best practices for wordpress site in AWS' , 
       date: 'November 2022' ,
-      link: '/background/BestPracticesForWordpressSitesInAws.jpg'
+      source: '/background/BestPracticesForWordpressSitesInAws.jpg' ,
+      link: ''
     },
     { 
       id: 13, 
       title: 'Firebase: Multi-platform system integration using Cloud database' , 
       date: 'April 2022' ,
-      link: '/background/Firebase.png'
+      source: '/background/Firebase.png' ,
+      link: ''
     },
     { 
       id: 14, 
       title: 'PHP MVC Framework Laravel: Developing Serverside Websites' , 
       date: 'April 2022' ,
-      link: '/background/Laravel.png'
+      source: '/background/Laravel.png' ,
+      link: ''
     },
     { 
       id: 15, 
       title: 'Web Development Series: ABC is for kids, SQL is for YOU' , 
       date: 'October 2020' ,
-      link: '/background/ABCIsForKids.png'
+      source: '/background/ABCIsForKids.png' ,
+      link: ''
     },
     { 
       id: 16, 
       title: 'Web Development Series: Git Ready with Version Control' , 
       date: 'October 2020' ,
-      link: '/background/GitReadyWithVC.png'
+      source: '/background/GitReadyWithVC.png' , 
+      link: ''
     },
   ]
   
   const awardsBackgrounds = [
     { 
       id: 1, 
-      title: 'Top 15 Finalist from the recent Appcon 2022' , 
+      title: 'Finalist from the recent Appcon 2022', 
       date: 'April 2023' ,
-      link: '/background/Otis.jpg'
+      source: '/background/Otis.jpg' , 
+      link: 'https://www.facebook.com/698995960469436/posts/pfbid02a8P8osaw8qqYdjBiaYd1mxDTaG6Ly868jwoctdycC5oJYGdmydySxo1Q7w9oVtVMl/?app=fbl'
     },
     { 
       id: 2, 
       title: 'First place in DOST R&D Conference: Scientific Poster Competition' , 
       date: 'December 2022' ,
-      link: '/background/DOST.png'
+      source: '/background/DOST.png' ,
+      link: 'https://www.facebook.com/100064669392395/posts/pfbid0nzBMT7a2QRNiXMoKhnP1okuLAnHRU9jZHtWJkLwPfCA3BM3GjCMbSTN299XUSfC1l/?app=fbl'
     },
+  ]
+  
+  const certificationBackgrounds = [
+    { 
+      id: 1, 
+      title: 'JavaScript Algorithms and Data Structures certification from freeCodeCamp.org', 
+      date: 'May 2023' ,
+      source: '/background/FCC_DS&A.jpg' ,
+      link: 'https://www.freecodecamp.org/certification/Jmr-13/javascript-algorithms-and-data-structures'
+    }
   ]
 </script>
 <template>
@@ -165,10 +193,12 @@
     <BackgroundEducationDetails v-for="eduBackground in eduBackgrounds" :key="eduBackground.id" :eduBackground="eduBackground" />
     <HeaderTitle title="experience" />
     <BackgroundExperienceDetails v-for="experienceBackground in experienceBackgrounds" :key="experienceBackground.id" :experienceBackground="experienceBackground"/>
+    <HeaderTitle title="certifications" />
+    <BackgroundCertificationDetails v-for="certification in certificationBackgrounds" :key="certification.id" :certificationBackground="certification"/>
     <HeaderTitle title="awards" />
     <BackgroundCertificationDetails v-for="award in awardsBackgrounds" :key="award.id" :certificationBackground="award"/>
     <HeaderTitle title="webinars/seminars" />
-    <BackgroundCertificationDetails v-for="certificationBackground in certificationBackgrounds" :key="certificationBackground.id" :certificationBackground="certificationBackground"/>
+    <BackgroundCertificationDetails v-for="webinarSeminar in webinarSeminarBackgrounds" :key="webinarSeminar.id" :certificationBackground="webinarSeminar"/>
     <NavigationBottomBar />
   </div>
 </template>

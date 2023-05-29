@@ -4,16 +4,18 @@
   }
 </script>
 <template>
-    <div>
-      <div class="container">
-        <img :src="certificationBackground.link" alt="certificationBackground.title" loading="lazy"/>
-        <h5 class="year">{{ certificationBackground.date }}</h5>
-        <br />
-      </div>
-      <br />
-      <p>{{ certificationBackground.title }}</p>
+  <div>
+    <div class="container">
+      <img :src="certificationBackground.source" alt="certificationBackground.title" loading="lazy"/>
+      <h5 class="year">{{ certificationBackground.date }}</h5>
       <br />
     </div>
+    <br />
+    <p>{{ certificationBackground.title }}</p>
+    <br />
+    <a v-if="certificationBackground.link" :href="certificationBackground.link" target="_blank">{{ certificationBackground.link }}</a>
+    <br />
+  </div>
 </template>
 <style scoped>
   .container {
@@ -40,7 +42,15 @@
     border-radius: var(--rounded);
   }
   p {
-    width: 100%;
+    display: block;
     text-align: center;
+  }
+  a {
+    display: block;
+    text-align: center;
+    text-decoration: underline;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 </style>
