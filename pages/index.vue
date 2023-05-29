@@ -20,6 +20,10 @@
     --primary-color: #f1e7d0;
   	--secondary-color: #433422;
   }
+  .terminal-mode {
+    --primary-color: #000000;
+  	--secondary-color: #66ff66;
+  }
   ::-moz-selection {
     color: var(--primary-color);
     background-color: var(--secondary-color);
@@ -54,11 +58,10 @@
   }
   body {
   	background-color: var(--primary-color);
-  	color: var(--alt-color);
+  	color: var(--secondary-color);
   	font-family: 'Source Serif Pro', serif;
     font-weight: 400;
     padding: 2vh 5vw 20vh 5vw;
-    color: var(--secondary-color);
   }
   button, a{
     all: unset;

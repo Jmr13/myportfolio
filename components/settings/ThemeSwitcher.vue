@@ -5,6 +5,7 @@
       <option value="light">Light &#9788;</option>
       <option value="dark">Dark &#9789;</option>
       <option value="sepia">Sepia &#167;</option>
+      <option value="terminal">Terminal &#9737;</option>
     </select>
   </div>
 </template>

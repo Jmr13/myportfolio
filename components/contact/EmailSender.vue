@@ -1,84 +1,88 @@
 <script setup>
-  const emailRes = ref()
   const gmailRes = ref()
   const errors = ref()
   
-  async function sendEmail () {
-    emailRes.value = await $fetch('/api/mail').catch((err) => {
-      errors.value = err
+  const username = ref()
+  const useremail = ref()
+  const usermessage = ref()
+
+  async function sendGmail() {
+    gmailRes.value = await $fetch('/api/gmail' , {
+      method: 'POST',
+      body: {
+        name: username.value,
+        email: useremail.value,
+        message: usermessage.value
+      }
     })
-  }
-  
-  async function sendGmail () {
-    gmailRes.value = await $fetch('/api/gmail').catch((err) => {
+    .catch((err) => {
       errors.value = err
     })
   }
 </script>
 <template>
-  <div>
-    <div class="container">
-      <div class="center">
-        <div>
-          Welcome to nuxt-mailer.
-        </div>
-        <div class="mt-10">
-          <span>ensure you have an .env in the playground directory. (an example is provided)</span>
-        </div>
-        <div class="mt-10">
-          <button class="btn" @click="sendEmail">
-            send email
-          </button>
-          <button class="btn" @click="sendGmail">
-            send gmail
-          </button>
-        </div>
-        <div v-if="emailRes" class="mini">
-          Email Respose:
-          <div class="mini">
-            {{ emailRes }}
-          </div>
-        </div>
-        <div v-if="gmailRes" class="min">
-          Gmail Respose:
-          <div>
-            {{ gmailRes }}
-          </div>
-        </div>
-        <div v-if="errors" class="min">
-          Error:
-          <div>
-            {{ errors }}
-          </div>
-        </div>
+  <div class="container">
+    <form @submit.prevent="sendGmail()" class="form">
+      <div>
+        <label for="name">Name</label>
+        <input v-model="username" type="text" name="name" id="name" placeholder="Type your Name" />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input v-model="useremail" type="email" name="email" id="email" placeholder="Type your Email" />
+      </div>
+      <div>
+        <label for="message">Message</label>
+        <textarea v-model="usermessage" name="message" id=message rows="8" cols="40" placeholder="Type your message"></textarea>
+      </div>
+      <input type="submit" name="submit" value="Send Email" class="btn">
+    </form>
+    <div v-if="gmailRes" class="min">
+      Gmail Respose:
+      <div>
+        {{ gmailRes }}
+      </div>
+    </div>
+    <div v-if="errors" class="min">
+      Error:
+      <div>
+        {{ errors }}
       </div>
     </div>
   </div>
 </template>
 <style scoped>
-.container {
-  height: 1000px;
-  position: relative;
-  background-color: #18181B;
-  color: white
-}
-
-.btn {
-  background-color: #00DC82;
-  padding: 5px;
-  margin: 3px;
-}
-
-.center {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.mt-10 {
-  margin-top: 30px;
-}
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh 0;
+  }
+  .form input , .form textarea {
+    border: 2px solid var(--secondary-color);
+    border-radius: var(--rounded);
+    padding: 1vh 2vw;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 400;
+  }
+  .form label {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .form div {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh 0;
+  }
+  .btn {
+    padding: 2vh 0 !important;
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    text-align: center;
+    font-weight: bold !important;
+  }
 </style>
