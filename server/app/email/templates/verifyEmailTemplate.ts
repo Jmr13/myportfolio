@@ -122,7 +122,7 @@ const verifyEmailTemplate = function (
                   <tr>
                     <td style="padding: 0 2.5em; padding-bottom: 3em;">
                       <div class="text">
-                        <h4>From ${username} [useremail]</h4>
+                        <h4>${username} [useremail]</h4>
                         <p>
                           ${usermessage}
                         </p>
@@ -130,6 +130,14 @@ const verifyEmailTemplate = function (
                     </td>
                   </tr>
                 </table>
+              </td>
+            </tr>
+          </table>
+          </table>
+          <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
+            <tr>
+              <td class="bg_light" style="text-align: center;">
+              	<p>No longer want to receive these email? You can <a href="#" style="color: white;">Unsubscribe here</a></p>
               </td>
             </tr>
           </table>

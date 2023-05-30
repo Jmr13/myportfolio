@@ -1,11 +1,11 @@
 <script setup>
   const gmailRes = ref()
   const errors = ref()
-  
   const username = ref()
   const useremail = ref()
   const usermessage = ref()
-
+  const showModal = ref(true)
+  
   async function sendGmail() {
     gmailRes.value = await $fetch('/api/gmail' , {
       method: 'POST',
@@ -21,6 +21,7 @@
   }
 </script>
 <template>
+  {{gmailRes}}
   <div class="container">
     <form @submit.prevent="sendGmail()" class="form">
       <div>
@@ -37,6 +38,7 @@
       </div>
       <input type="submit" name="submit" value="Send Email" class="btn">
     </form>
+    <ModalShowResult v-if="gmailRes" @close-modal="gmailRes = null" />
     <div v-if="gmailRes" class="min">
       Gmail Respose:
       <div>

@@ -1,7 +1,7 @@
-<script>
-  export default {
-    props: ["certificationBackground"]
-  }
+<script setup>
+  const props = defineProps({
+    certificationBackground: Array
+  })
 </script>
 <template>
   <div>
