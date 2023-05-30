@@ -21,7 +21,6 @@
   }
 </script>
 <template>
-  {{gmailRes}}
   <div class="container">
     <form @submit.prevent="sendGmail()" class="form">
       <div>
@@ -38,19 +37,8 @@
       </div>
       <input type="submit" name="submit" value="Send Email" class="btn">
     </form>
-    <ModalShowResult v-if="gmailRes" @close-modal="gmailRes = null" />
-    <div v-if="gmailRes" class="min">
-      Gmail Respose:
-      <div>
-        {{ gmailRes }}
-      </div>
-    </div>
-    <div v-if="errors" class="min">
-      Error:
-      <div>
-        {{ errors }}
-      </div>
-    </div>
+    <ModalShowResult v-if="gmailRes" message="Your message have been sent Successfully" @close-modal="gmailRes = null" />
+    <ModalShowResult v-if="errors" message="There is an error. Please check your internet connection" @close-modal="errors = null" />
   </div>
 </template>
 <style scoped>

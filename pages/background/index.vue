@@ -33,14 +33,15 @@
   const experienceBackgrounds = [
     { 
       id: 1, 
-      role: 'Web Developer' , 
+      role: 'Web Developer(Internship)' , 
       company: 'Oikos Technologies' ,
       description: [
         'Building the frontend architecture using Laravel framework',
         'Generating documentation that outlines the recent updates in frontend development',
         'Carrying out thorough testing and troubleshooting to guarantee the website operates smoothly and efficiently',
         'Integrating front-end elements with back-end web services and APIs'
-      ]
+      ],
+      link: 'https://www.facebook.com/OikosTechnologies'
     }
   ]
   

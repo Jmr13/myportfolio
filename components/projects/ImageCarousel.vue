@@ -32,6 +32,8 @@
 		align-items: center;
 		position: relative;
 		padding: 1vh 2vw;
+		border: 2px solid var(--secondary-color);
+		border-radius: var(--rounded);
 	}
 	.carousel_slides {
 		display: flex;

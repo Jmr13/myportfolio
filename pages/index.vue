@@ -22,7 +22,7 @@
   }
   .terminal-mode {
     --primary-color: #000000;
-  	--secondary-color: #66ff66;
+  	--secondary-color: #008f27;
   }
   ::-moz-selection {
     color: var(--primary-color);

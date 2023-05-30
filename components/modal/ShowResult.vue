@@ -1,9 +1,11 @@
+<script setup>
+  const props = defineProps(['message'])
+</script>
 <template>
   <div class="modal-overlay">
     <div class="modal">
       <i class="ri-mail-check-line"></i>
-      <h2>Sent!</h2>
-      <p>Your message have been sent Successfully</p>
+      <p>{{ message }}</p>
       <button @click="$emit('close-modal')">Go Home</button>
     </div>
   </div>

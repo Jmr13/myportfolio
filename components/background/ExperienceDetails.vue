@@ -13,7 +13,7 @@
         <div>
           <h2>{{ experienceBackground.role }}</h2>
           <br />
-          <h4>{{ experienceBackground.company }}</h4>
+          <a :href="experienceBackground.link">{{ experienceBackground.company }}</a>
           <br />
           <h5 v-for="description in experienceBackground.description">
             ・{{ description }}
@@ -47,7 +47,7 @@
     flex-grow: 1;
     transform: scaleY(1.25);
   }
-  h4 {
+  a {
     text-decoration-line: underline;
   }
   h5 {
