@@ -1,7 +1,7 @@
-<script>
-  export default {
-    props: ["platforms"]
-  }
+<script setup>
+  const props = defineProps({
+    platforms: Object
+  })
 </script>
 <template>
   <div>

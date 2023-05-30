@@ -1,7 +1,7 @@
-<script>
-  export default {
-    props: ["project"]
-  }
+<script setup>
+  const props = defineProps({
+    project: Object
+  })
 </script>
 <template>
   <div class="container">

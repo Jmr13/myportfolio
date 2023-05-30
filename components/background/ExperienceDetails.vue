@@ -1,7 +1,7 @@
-<script>
-  export default {
-    props: ["experienceBackground"]
-  }
+<script setup>
+  const props = defineProps({
+    experienceBackground: Object
+  })
 </script>
 <template>
     <div>

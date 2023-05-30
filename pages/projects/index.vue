@@ -6,12 +6,12 @@
       description: 'A capstone project for the university degree. E-Dikta is an application that helps the visually impaired with reading printed texts. It converts recognized texts into speech output. Uses OpenCV for the Edge detection algorithm and Google ML Kit for Text recognition' ,
       link: '',
       images: [
-        '/projects/e-dikta/1.png',
-        '/projects/e-dikta/2.png',
-        '/projects/e-dikta/3.png',
-        '/projects/e-dikta/4.png',
-        '/projects/e-dikta/5.png',
-        '/projects/e-dikta/6.png'
+        '/projects/e-dikta/20230530_183305_0000.webp',
+        '/projects/e-dikta/20230530_183305_0001.webp',
+        '/projects/e-dikta/20230530_183305_0002.webp',
+        '/projects/e-dikta/20230530_183305_0003.webp',
+        '/projects/e-dikta/20230530_183305_0004.webp',
+        '/projects/e-dikta/20230530_183305_0006.webp',
       ] 
     }
   ];
@@ -22,11 +22,12 @@
       description: 'A Simple PWA To-do list App. This is the PWA demonstrated in our seminar' ,
       link: 'https://toka-mobile.netlify.app/',
       images: [
-        'https://raw.githubusercontent.com/Jmr13/Toka/main/assets/pwa-assets/screenshots/1.png',
-        'https://raw.githubusercontent.com/Jmr13/Toka/main/assets/pwa-assets/screenshots/2.png',
-        'https://raw.githubusercontent.com/Jmr13/Toka/main/assets/pwa-assets/screenshots/3.png',
-        'https://raw.githubusercontent.com/Jmr13/Toka/main/assets/pwa-assets/screenshots/4.png',
-        'https://raw.githubusercontent.com/Jmr13/Toka/main/assets/pwa-assets/screenshots/5.png'
+        '/projects/toka/20230530_184036_0000.webp',
+        '/projects/toka/20230530_184036_0001.webp',
+        '/projects/toka/20230530_184036_0002.webp',
+        '/projects/toka/20230530_184036_0003.webp',
+        '/projects/toka/20230530_184036_0004.webp',
+        '/projects/toka/20230530_184037_0005.webp',
       ]
     }
   ]

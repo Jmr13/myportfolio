@@ -24,5 +24,6 @@
     background-color: var(--secondary-color);
     color: var(--primary-color);
     font-weight: bold;
+    text-shadow: var(--shadow);
   }
 </style>

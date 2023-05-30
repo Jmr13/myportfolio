@@ -1,7 +1,7 @@
-<script>
-  export default {
-    props: ["eduBackground"],
-  }
+<script setup>
+  const props = defineProps({
+    eduBackground: Object
+  })
 </script>
 <template>
    <div>
