@@ -21,7 +21,6 @@
   }
 </script>
 <template>
-  <div class="parentContainer">
     <div class="container">
       <form @submit.prevent="sendGmail()" class="form">
         <div>
@@ -41,13 +40,8 @@
       <ModalShowResult v-if="gmailRes" message="Your message have been sent Successfully" @close-modal="gmailRes = null" />
       <ModalShowResult v-if="errors" message="There is an error. Please check your internet connection" @close-modal="errors = null" />
     </div>
-  </div>
 </template>
 <style scoped>
-  .parentContainer {
-    display: flex;
-    justify-content: center;
-  }
   .container {
     display: flex;
     flex-direction: column;
@@ -84,6 +78,7 @@
   @media (min-width : 1200px) {
     .container {
       width: 70%;
+      margin: auto;
     }
     .form {
       gap: 5vh 0;

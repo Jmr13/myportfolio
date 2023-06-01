@@ -60,9 +60,6 @@
   }
   @media (min-width : 1200px) {
     .parentContainer {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
       gap: 5vh 2vw;
     }
     .container {
@@ -70,9 +67,6 @@
     }
     h5 {
       font-size: 1rem;
-    }
-    p {
-      font-size: 2rem;
     }
     a {
       font-size: 1rem;

@@ -89,7 +89,7 @@
       font-size: 4rem;
     }
     p {
-      font-size: 2rem;
+      font-size: 1rem;
     }
     a {
       font-size: 1rem;

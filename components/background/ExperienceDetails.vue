@@ -63,7 +63,7 @@
     .line {
       width: 16px;
       margin: 0 24px;
-      transform: scaleY(1.25);
+      transform: scaleY(1.10);
     }
     h2 {
       font-size: 4rem;
