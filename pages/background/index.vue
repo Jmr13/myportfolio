@@ -166,14 +166,14 @@
       title: 'Finalist from the recent Appcon 2022', 
       date: 'April 2023' ,
       source: '/background/Otis.webp' , 
-      link: 'https://www.facebook.com/698995960469436/posts/pfbid02a8P8osaw8qqYdjBiaYd1mxDTaG6Ly868jwoctdycC5oJYGdmydySxo1Q7w9oVtVMl/?app=fbl'
+      link: 'https://tinyurl.com/2xp499m4'
     },
     { 
       id: 2, 
       title: 'First place in DOST R&D Conference: Scientific Poster Competition' , 
       date: 'December 2022' ,
       source: '/background/DOST.webp' ,
-      link: 'https://www.facebook.com/100064669392395/posts/pfbid0nzBMT7a2QRNiXMoKhnP1okuLAnHRU9jZHtWJkLwPfCA3BM3GjCMbSTN299XUSfC1l/?app=fbl'
+      link: 'https://tinyurl.com/5n6f6342'
     },
   ]
   
@@ -183,7 +183,7 @@
       title: 'JavaScript Algorithms and Data Structures certification from freeCodeCamp.org', 
       date: 'May 2023' ,
       source: '/background/FCC_DS&A.webp' ,
-      link: 'https://www.freecodecamp.org/certification/Jmr-13/javascript-algorithms-and-data-structures'
+      link: 'https://tinyurl.com/yc2f3scx'
     }
   ]
 </script>
@@ -193,13 +193,13 @@
     <HeaderTitle title="education" />
     <BackgroundEducationDetails v-for="eduBackground in eduBackgrounds" :key="eduBackground.id" :eduBackground="eduBackground" />
     <HeaderTitle title="experience" />
-    <BackgroundExperienceDetails v-for="experienceBackground in experienceBackgrounds" :key="experienceBackground.id" :experienceBackground="experienceBackground"/>
+    <BackgroundExperienceDetails v-for="experienceBackground in experienceBackgrounds" :key="experienceBackground.id" :experienceBackground="experienceBackground" />
     <HeaderTitle title="certifications" />
     <BackgroundCertificationDetails :certificationBackgrounds="certificationBackgrounds" />
     <HeaderTitle title="awards" />
-    <BackgroundCertificationDetails :certificationBackgrounds="awardsBackgrounds"/>
+    <BackgroundCertificationDetails :certificationBackgrounds="awardsBackgrounds" />
     <HeaderTitle title="webinars/seminars" />
-    <BackgroundCertificationDetails :certificationBackgrounds="webinarSeminarBackgrounds"/>
+    <BackgroundCertificationDetails :certificationBackgrounds="webinarSeminarBackgrounds" />
     <NavigationBottomBar />
   </div>
 </template>

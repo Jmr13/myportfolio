@@ -37,9 +37,9 @@
     margin: 0;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     box-sizing: border-box;
-    /*
+    
     border: 1px solid var(--secondary-color);
-    */
+    
   }
   *::before {
     padding: 0;

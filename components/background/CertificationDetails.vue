@@ -22,10 +22,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    overflow: none;
   }
   .container {
     position: relative;
-    overflow: none;
     padding: 1vh 2vw;
     outline: 2px solid var(--secondary-color);
     border-radius: var(--rounded);
