@@ -35,4 +35,15 @@
     border-radius: var(--rounded);
     text-shadow: var(--shadow);
   }
+  @media (min-width : 1200px) {
+    div h1 {
+      font-size: 6rem;
+    }
+    h2 {
+      font-size: 4rem;
+    }
+    p {
+      font-size: 2rem;
+    }
+  }
 </style>

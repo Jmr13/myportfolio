@@ -15,9 +15,9 @@
           <br />
           <a :href="experienceBackground.link">{{ experienceBackground.company }}</a>
           <br />
-          <h5 v-for="description in experienceBackground.description">
+          <p v-for="description in experienceBackground.description">
             ・{{ description }}
-          </h5>
+          </p>
         </div>
       </div>
     </div>
@@ -50,7 +50,45 @@
   a {
     text-decoration-line: underline;
   }
-  h5 {
+  p {
     margin-top: 2vh;
+  }
+  @media (min-width : 1200px) {
+    .circle {
+      width: 60px;
+      height: 60px;
+      margin-right: 40px;
+      border-radius: 50px;
+    }
+    .line {
+      width: 16px;
+      margin: 0 24px;
+      transform: scaleY(1.25);
+    }
+    h2 {
+      font-size: 4rem;
+    }
+    a , p{
+      font-size: 2rem;
+    }
+  }
+  @media (min-width : 1600px) {
+    .circle {
+      width: 80px;
+      height: 80px;
+      margin-right: 80px;
+      border-radius: 100px;
+    }
+    .line {
+      width: 32px;
+      margin: 0 48px;
+      transform: scaleY(1.25);
+    }
+    h2 {
+      font-size: 5rem;
+    }
+    a , h5{
+      font-size: 2.5rem;
+    }
   }
 </style>

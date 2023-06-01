@@ -21,27 +21,33 @@
   }
 </script>
 <template>
-  <div class="container">
-    <form @submit.prevent="sendGmail()" class="form">
-      <div>
-        <label for="name">Name</label>
-        <input v-model="username" type="text" name="name" id="name" placeholder="Type your Name" />
-      </div>
-      <div>
-        <label for="email">Email</label>
-        <input v-model="useremail" type="email" name="email" id="email" placeholder="Type your Email" />
-      </div>
-      <div>
-        <label for="message">Message</label>
-        <textarea v-model="usermessage" name="message" id=message rows="8" cols="40" placeholder="Type your message"></textarea>
-      </div>
-      <input type="submit" name="submit" value="Send Email" class="btn">
-    </form>
-    <ModalShowResult v-if="gmailRes" message="Your message have been sent Successfully" @close-modal="gmailRes = null" />
-    <ModalShowResult v-if="errors" message="There is an error. Please check your internet connection" @close-modal="errors = null" />
+  <div class="parentContainer">
+    <div class="container">
+      <form @submit.prevent="sendGmail()" class="form">
+        <div>
+          <label for="name">Name</label>
+          <input v-model="username" type="text" name="name" id="name" placeholder="Type your Name" />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input v-model="useremail" type="email" name="email" id="email" placeholder="Type your Email" />
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea v-model="usermessage" name="message" id=message rows="8" cols="40" placeholder="Type your message"></textarea>
+        </div>
+        <input type="submit" name="submit" value="Send Email" class="btn">
+      </form>
+      <ModalShowResult v-if="gmailRes" message="Your message have been sent Successfully" @close-modal="gmailRes = null" />
+      <ModalShowResult v-if="errors" message="There is an error. Please check your internet connection" @close-modal="errors = null" />
+    </div>
   </div>
 </template>
 <style scoped>
+  .parentContainer {
+    display: flex;
+    justify-content: center;
+  }
   .container {
     display: flex;
     flex-direction: column;
@@ -74,5 +80,19 @@
     color: var(--primary-color);
     text-align: center;
     font-weight: bold !important;
+  }
+  @media (min-width : 1200px) {
+    .container {
+      width: 70%;
+    }
+    .form {
+      gap: 5vh 0;
+    }
+    .form input , .form textarea {
+      font-size: 2rem;
+    }
+    .form label {
+      font-size: 3rem;
+    }
   }
 </style>

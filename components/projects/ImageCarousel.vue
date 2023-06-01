@@ -84,4 +84,24 @@
 	  text-align: center;
 	  text-decoration: underline;
 	}
+  @media (min-width : 1200px) {
+    h1 {
+      font-size: 4rem;
+    }
+    p {
+      font-size: 2rem;
+    }
+    a {
+      font-size: 1rem;
+    }
+    .carousel_slides {
+      width: 60%;
+    }
+    .carousel_slides > div {
+      width: 85%;
+    }
+    .carousel_slider > a {
+      padding: 1rem;
+    }
+	}
 </style>

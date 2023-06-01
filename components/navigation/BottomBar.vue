@@ -68,4 +68,12 @@
     fill: var(--primary-color);
     text-shadow: var(--shadow);
   }
+  @media (min-width : 1200px) {
+    nav a i {
+      font-size: 4rem;
+    }
+    nav a h5 {
+      font-size: 1.5rem;
+    }
+  }
 </style>

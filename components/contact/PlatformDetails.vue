@@ -19,6 +19,7 @@
 <style scoped>
   div {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
     gap: 2vh 2vw;
   }

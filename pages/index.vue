@@ -70,4 +70,9 @@
     border: 1px solid white;
     background-color: white;
   }
+  @media (min-width : 1200px) {
+    body {
+      padding: 4vh 10vw 20vh 10vw;
+    }
+  }
 </style>

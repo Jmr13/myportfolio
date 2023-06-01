@@ -55,4 +55,18 @@
     border-radius: var(--rounded);
     text-shadow: var(--shadow);
   }
+  @media (min-width : 1200px) {
+    hr {
+      height: 1vh;
+    }
+    .year {
+      font-size: 4rem;
+    }
+    .level {
+      font-size: 2rem;
+    }
+    pre {
+      font-size: 2rem;
+    }
+  }
 </style>

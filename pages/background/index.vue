@@ -195,11 +195,11 @@
     <HeaderTitle title="experience" />
     <BackgroundExperienceDetails v-for="experienceBackground in experienceBackgrounds" :key="experienceBackground.id" :experienceBackground="experienceBackground"/>
     <HeaderTitle title="certifications" />
-    <BackgroundCertificationDetails v-for="certification in certificationBackgrounds" :key="certification.id" :certificationBackground="certification"/>
+    <BackgroundCertificationDetails :certificationBackgrounds="certificationBackgrounds" />
     <HeaderTitle title="awards" />
-    <BackgroundCertificationDetails v-for="award in awardsBackgrounds" :key="award.id" :certificationBackground="award"/>
+    <BackgroundCertificationDetails :certificationBackgrounds="awardsBackgrounds"/>
     <HeaderTitle title="webinars/seminars" />
-    <BackgroundCertificationDetails v-for="webinarSeminar in webinarSeminarBackgrounds" :key="webinarSeminar.id" :certificationBackground="webinarSeminar"/>
+    <BackgroundCertificationDetails :certificationBackgrounds="webinarSeminarBackgrounds"/>
     <NavigationBottomBar />
   </div>
 </template>
