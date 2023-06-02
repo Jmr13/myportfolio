@@ -28,6 +28,7 @@
   }
   .container {
     display: flex;
+    gap: 0 2vw;
   }
   .container div {
     display: flex;
@@ -36,16 +37,23 @@
   .circle {
     width: 30px;
     height: 30px;
-    margin-right: 20px;
+    margin: auto;
     border-radius: 25px;
+    background-color: var(--secondary-color);
+  }
+  .circle::before {
+    content: '';
+    width: 8px;
+    height: inherit;
+    align-self: center;
+    transform: translateY(3vh);
     background-color: var(--secondary-color);
   }
   .line {
     width: 8px;
-    margin: 0 12px;
+    margin: auto;
     background-color: var(--secondary-color);
     flex-grow: 1;
-    transform: scaleY(1.25);
   }
   a {
     text-decoration-line: underline;
@@ -57,13 +65,15 @@
     .circle {
       width: 60px;
       height: 60px;
-      margin-right: 40px;
       border-radius: 50px;
+    }
+    .circle::before {
+      content: '';
+      width: 16px;
+      transform: translateY(3vh);
     }
     .line {
       width: 16px;
-      margin: 0 24px;
-      transform: scaleY(1.10);
     }
     h2 {
       font-size: 4rem;
@@ -74,15 +84,17 @@
   }
   @media (min-width : 1600px) {
     .circle {
-      width: 80px;
-      height: 80px;
-      margin-right: 80px;
-      border-radius: 100px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50px;
+    }
+    .circle::before {
+      content: '';
+      width: 16px;
+      transform: translateY(2vh);
     }
     .line {
-      width: 32px;
-      margin: 0 48px;
-      transform: scaleY(1.25);
+      width: 16px;
     }
     h2 {
       font-size: 5rem;
