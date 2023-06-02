@@ -24,8 +24,8 @@ export default defineNuxtConfig({
     'nuxt-mailer'
   ],
   runtimeConfig: {
-    mailerUser: '',
-    mailerPass: '',
-    mailerLog: '',  
+    mailerUser: process.env.NUXT_MAILER_USER ,
+    mailerPass: process.env.NUXT_MAILER_PASS,
+    mailerLog: process.env.NUXT_MAILER_LOG,
   }
 })
