@@ -1,4 +1,10 @@
 <script setup>
+  useHead({
+    title: 'Projects',
+    meta: [
+      { name: 'description', content: 'Projects of Jomar Gamayan' }
+    ]
+  })
   const thesis_capstones = [
     { 
       id: 1, 

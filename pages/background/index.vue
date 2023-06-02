@@ -1,4 +1,11 @@
 <script setup>
+  useHead({
+    title: 'Background',
+    meta: [
+      { name: 'description', content: 'Background details about Jomar Gamayan' }
+    ]
+  })
+  
   const eduBackgrounds = [
     { 
       id: 1, 

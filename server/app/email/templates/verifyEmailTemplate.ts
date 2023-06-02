@@ -122,7 +122,7 @@ const verifyEmailTemplate = function (
                   <tr>
                     <td style="padding: 0 2.5em; padding-bottom: 3em;">
                       <div class="text">
-                        <h4>${username} [useremail]</h4>
+                        <h4>${username} [${useremail}]</h4>
                         <p>
                           ${usermessage}
                         </p>

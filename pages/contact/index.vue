@@ -1,4 +1,11 @@
 <script setup>
+  useHead({
+    title: 'Contact',
+    meta: [
+      { name: 'description', content: 'Contact details of Jomar Gamayan' }
+    ]
+  })
+  
   const platformDetails = [
     { id: 1 , title:'Facebook' , icon:'ri-facebook-line' , details:'Jomar Gamayan' } ,
     { id: 2 , title:'LinkedIn' , icon:'ri-linkedin-line' , details:'Jomar Gamayan' } ,

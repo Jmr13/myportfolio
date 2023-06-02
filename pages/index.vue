@@ -1,3 +1,11 @@
+<script setup>
+  useHead({
+    title: 'Profile',
+    meta: [
+      { name: 'description', content: 'Profile of Jomar Gamayan' }
+    ]
+  })
+</script>
 <template>
   <div>
     <SettingsThemeSwitcher />
