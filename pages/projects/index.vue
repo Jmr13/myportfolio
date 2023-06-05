@@ -19,6 +19,20 @@
         '/projects/e-dikta/20230530_183305_0004.webp',
         '/projects/e-dikta/20230530_183305_0006.webp',
       ] 
+    },
+    { 
+      id: 2, 
+      name: 'Flip' , 
+      description: 'An android mobile game (Case Study) submitted for CCS-106 - Applications Development and Emerging Technologies' ,
+      link: '',
+      images: [
+        '/projects/flip/1.webp',
+        '/projects/flip/2.webp',
+        '/projects/flip/3.webp',
+        '/projects/flip/4.webp',
+        '/projects/flip/5.webp',
+        '/projects/flip/6.webp'
+      ] 
     }
   ];
   const personalprojects = [
