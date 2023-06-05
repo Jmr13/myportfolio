@@ -8,11 +8,11 @@
   
   async function sendGmail() {
     gmailRes.value = await $fetch('/api/gmail' , {
-      method: 'POST',
-      body: {
-        name: username.value,
-        email: useremail.value,
-        message: usermessage.value
+    method: 'POST',
+    body: {
+      name: username.value,
+      email: useremail.value,
+      message: usermessage.value
       }
     })
     .catch((err) => {
@@ -25,15 +25,15 @@
       <form @submit.prevent="sendGmail()" class="form">
         <div>
           <label for="name">Name</label>
-          <input v-model="username" type="text" name="name" id="name" placeholder="Type your Name" />
+          <input v-model="username" type="text" name="name" id="name" placeholder="Type your Name" required />
         </div>
         <div>
           <label for="email">Email</label>
-          <input v-model="useremail" type="email" name="email" id="email" placeholder="Type your Email" />
+          <input v-model="useremail" type="email" name="email" id="email" placeholder="Type your Email" required />
         </div>
         <div>
           <label for="message">Message</label>
-          <textarea v-model="usermessage" name="message" id=message rows="8" cols="40" placeholder="Type your message"></textarea>
+          <textarea v-model="usermessage" name="message" id=message rows="8" cols="40" placeholder="Type your message" required ></textarea>
         </div>
         <input type="submit" name="submit" value="Send Email" class="btn">
       </form>

@@ -6,7 +6,7 @@
     <div class="modal">
       <i class="ri-mail-check-line"></i>
       <p>{{ message }}</p>
-      <button @click="$emit('close-modal')">Go Home</button>
+      <button @click="$emit('close-modal') ; window.location.reload();">Go Home</button>
     </div>
   </div>
 </template>
