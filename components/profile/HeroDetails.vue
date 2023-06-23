@@ -52,5 +52,8 @@
     p {
       font-size: 2rem;
     }
+    img {
+      width: 50%;
+    }
   }
 </style>
