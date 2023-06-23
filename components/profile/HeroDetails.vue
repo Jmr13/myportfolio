@@ -1,5 +1,8 @@
 <template>
   <div>
+    <img src="/index/ProfilePic.jpg" alt="Profile" />
+    <br />
+    <br />
     <h1>
       i am jomar gamayan
     </h1>
@@ -34,6 +37,10 @@
     padding: 1vh 0;
     border-radius: var(--rounded);
     text-shadow: var(--shadow);
+  }
+  img {
+    width: 100%;
+    border-radius: var(--rounded);
   }
   @media (min-width : 1200px) {
     div h1 {
