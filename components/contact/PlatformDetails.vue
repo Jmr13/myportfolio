@@ -5,7 +5,7 @@
 </script>
 <template>
   <div class="parentContainer">
-    <div v-for="platform in platforms" :key="platform.id" class="container">
+    <a v-for="platform in platforms" :href="platform.link" :key="platform.id" class="container">
       <div>
         <i :class="platform.icon"></i>
       </div>
@@ -13,7 +13,7 @@
         <h5>{{ platform.title }}</h5>
         <p>{{ platform.details }}</p>
       </div>
-    </div>
+    </a>
   </div>
 </template>
 <style scoped>
