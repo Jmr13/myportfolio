@@ -30,6 +30,7 @@
     outline: 2px solid var(--secondary-color);
     border-radius: var(--rounded);
     text-align: center;
+    margin: 1vh 2vw;
   }
   .year {
     position: absolute;

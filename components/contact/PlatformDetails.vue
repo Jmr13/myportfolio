@@ -5,7 +5,7 @@
 </script>
 <template>
   <div class="parentContainer">
-    <a v-for="platform in platforms" :href="platform.link" :key="platform.id" class="container">
+    <a v-for="platform in platforms" :href="platform.link" target="_blank" :key="platform.id" class="container">
       <div>
         <i :class="platform.icon"></i>
       </div>
