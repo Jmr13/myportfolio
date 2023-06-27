@@ -69,11 +69,21 @@
     text-shadow: var(--shadow);
   }
   @media (min-width : 1200px) {
+    nav {
+      right: 10vw;
+      left: 10vw;
+    }
     nav a i {
-      font-size: 4rem;
+      font-size: 3rem;
     }
     nav a h5 {
-      font-size: 1.5rem;
+      font-size: 1rem;
+    }
+  }
+  @media (min-width : 1600px) {
+    nav {
+      right: 20vw;
+      left: 20vw;
     }
   }
 </style>
