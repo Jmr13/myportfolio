@@ -182,6 +182,20 @@
       source: '/background/DOST.webp' ,
       link: 'https://tinyurl.com/5n6f6342'
     },
+    { 
+      id: 3, 
+      title: 'Second Place in the  Most Popular Booth(BSCS) in the 24th annual IT theses Exhibit held at the University of Caloocan City', 
+      date: 'April 2023' ,
+      source: '/background/Edikta_MostPopular.jpg' , 
+      link: ''
+    },
+    { 
+      id: 4, 
+      title: 'Third Place in the Best in thesis Award(BSCS) in the 24th annual IT theses Exhibit held at the University of Caloocan City', 
+      date: 'April 2023' ,
+      source: '/background/Edikta_BestThesis.png' , 
+      link: ''
+    },
   ]
   
   const certificationBackgrounds = [
