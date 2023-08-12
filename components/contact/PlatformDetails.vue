@@ -40,6 +40,7 @@
     flex-direction: column;
     flex-grow: 1;
     gap: 1vh 0;
+    cursor: pointer;
   }
   @media (min-width : 1200px) {
     i {

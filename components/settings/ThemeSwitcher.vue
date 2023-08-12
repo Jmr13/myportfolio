@@ -14,6 +14,7 @@
     display: flex;
     justify-content: flex-end;
     margin-bottom: 2vh;
+    cursor: pointer;
   }
   select {
     all: unset;
