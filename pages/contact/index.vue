@@ -15,6 +15,7 @@
 </script>
 <template>
   <div>
+    <HeaderLogo />
     <SettingsThemeSwitcher />
     <HeaderTitle title="email me" />
     <ContactEmailSender />

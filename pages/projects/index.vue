@@ -54,6 +54,7 @@
 </script>
 <template>
   <div>
+    <HeaderLogo />
     <SettingsThemeSwitcher />
     <HeaderTitle title="thesis/capstone" />
     <ProjectsImageCarousel v-for="project in thesis_capstones" :key="project.id" :project="project" />

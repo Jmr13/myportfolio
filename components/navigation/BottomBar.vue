@@ -21,6 +21,8 @@
   </div>
 </template>
 <style scoped>
+  @import url("~/assets/css/animation.css");
+  
   nav {
     display: flex;
     justify-content: space-between;
@@ -52,6 +54,11 @@
     font-family: 'Source Serif Pro', serif;
     font-weight: 900;
   }
+  nav a:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transition: all 0.5s ease-in-out;
+  }
   nav a i {
     font-size: 2rem;
   }
@@ -63,6 +70,12 @@
     background-color: var(--secondary-color);
     color: var(--primary-color);
     text-shadow: var(--shadow);
+  }
+  .router-link-active i {
+    animation: pulsate-fwd 0.5s ease-in-out infinite both;
+  }
+  .router-link-active h5 {
+    animation: pulsate-fwd 0.5s ease-in-out infinite both;
   }
   .router-link-active currentSvg {
     fill: var(--primary-color);

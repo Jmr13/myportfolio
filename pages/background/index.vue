@@ -210,6 +210,7 @@
 </script>
 <template>
   <div>
+    <HeaderLogo />
     <SettingsThemeSwitcher />
     <HeaderTitle title="education" />
     <BackgroundEducationDetails v-for="eduBackground in eduBackgrounds" :key="eduBackground.id" :eduBackground="eduBackground" />

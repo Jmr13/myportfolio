@@ -13,8 +13,7 @@
   div {
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 2vh;
-    cursor: pointer;
+    margin-bottom: 2vh
   }
   select {
     all: unset;
@@ -26,5 +25,6 @@
     color: var(--primary-color);
     font-weight: bold;
     text-shadow: var(--shadow);
+    cursor: pointer;
   }
 </style>

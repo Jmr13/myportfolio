@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img src="/index/ProfilePic.jpg" alt="Profile" />
+    <img src="/index/ProfilePic.png" alt="Profile" />
     <br />
     <br />
     <h1>
@@ -15,8 +15,7 @@
     </h2>
     <br />
     <p>
-      a passionate developer with strong foundation in design. Well-organized and
-      motivated. Currently a frontend developer, hoping to be full stack developer.
+      I am a passionate developer with a strong foundation in design. Having a tremendous curiosity drives me to learn and explore things
     </p>
   </div>
 </template>
@@ -28,7 +27,6 @@
     overflow: none;
     color: var(--secondary-color);
     filter: blur(0.25px);
-    height: 100%;
   }
   div h1 {
     font-size: 2rem;
@@ -41,6 +39,7 @@
   img {
     width: 100%;
     border-radius: var(--rounded);
+    outline: 2px solid 	var(--secondary-color);
   }
   @media (min-width : 1200px) {
     div h1 {

@@ -8,6 +8,7 @@
 </script>
 <template>
   <div>
+    <HeaderLogo />
     <SettingsThemeSwitcher />
     <ProfileHeroDetails />
     <NavigationBottomBar />
