@@ -14,13 +14,10 @@
   ]
 </script>
 <template>
-  <div>
-    <HeaderLogo />
-    <SettingsThemeSwitcher />
+  <NuxtLayout>
     <HeaderTitle title="email me" />
     <ContactEmailSender />
     <HeaderTitle title="contact me" />
     <ContactPlatformDetails :platforms="platformDetails" />
-    <NavigationBottomBar />
-  </div>
+  </NuxtLayout>
 </template>

@@ -209,9 +209,7 @@
   ]
 </script>
 <template>
-  <div>
-    <HeaderLogo />
-    <SettingsThemeSwitcher />
+  <NuxtLayout>
     <HeaderTitle title="education" />
     <BackgroundEducationDetails v-for="eduBackground in eduBackgrounds" :key="eduBackground.id" :eduBackground="eduBackground" />
     <HeaderTitle title="experience" />
@@ -222,6 +220,5 @@
     <BackgroundCertificationDetails :certificationBackgrounds="awardsBackgrounds" />
     <HeaderTitle title="webinars/seminars" />
     <BackgroundCertificationDetails :certificationBackgrounds="webinarSeminarBackgrounds" />
-    <NavigationBottomBar />
-  </div>
+  </NuxtLayout>
 </template>

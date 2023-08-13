@@ -7,12 +7,9 @@
   })
 </script>
 <template>
-  <div>
-    <HeaderLogo />
-    <SettingsThemeSwitcher />
+  <NuxtLayout>
     <ProfileHeroDetails />
-    <NavigationBottomBar />
-  </div>
+  </NuxtLayout>
 </template>
 <style>
   :root {

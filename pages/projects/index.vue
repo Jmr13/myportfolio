@@ -53,13 +53,10 @@
   ]
 </script>
 <template>
-  <div>
-    <HeaderLogo />
-    <SettingsThemeSwitcher />
+  <NuxtLayout>
     <HeaderTitle title="thesis/capstone" />
     <ProjectsImageCarousel v-for="project in thesis_capstones" :key="project.id" :project="project" />
     <HeaderTitle title="personal project" />
     <ProjectsImageCarousel v-for="project in personalprojects" :key="project.id" :project="project" />
-    <NavigationBottomBar />
-  </div>
+  </NuxtLayout>
 </template>
