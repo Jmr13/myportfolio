@@ -14,9 +14,9 @@
       ・frontend developer・
     </h2>
     <br />
-    <p>
+    <h4>
       I am a passionate developer with a strong foundation in design. Having a tremendous curiosity drives me to learn and explore things
-    </p>
+    </h4>
   </div>
 </template>
 <style scoped>
@@ -29,7 +29,6 @@
     filter: blur(0.25px);
   }
   div h1 {
-    font-size: 2rem;
     background-color: var(--secondary-color);
     color: var(--primary-color);
     padding: 1vh 0;
@@ -41,18 +40,19 @@
     border-radius: var(--rounded);
     outline: 2px solid 	var(--secondary-color);
   }
-  @media (min-width : 1200px) {
-    div h1 {
-      font-size: 6rem;
-    }
-    h2 {
-      font-size: 4rem;
-    }
-    p {
-      font-size: 2rem;
-    }
+  @media (min-width : 768px) {
     img {
-      width: 50%;
+      width: 60%;
+    }
+  }
+  @media (min-width : 1200px) {
+    img {
+      width: 40%;
+    }
+  }
+  @media (min-width : 1600px) {
+    img {
+      width: 20%;
     }
   }
 </style>

@@ -6,7 +6,7 @@
 <template>
   <div class="container">
     <h1>・{{ project.name }}・</h1>
-    <p>{{ project.description }}</p>
+    <h4>{{ project.description }}</h4>
     <br />
     <a v-if="project.link"  :href="project.link" target="_blank" class="link">{{ project.link }}</a>
     <br />
@@ -85,15 +85,6 @@
 	  text-decoration: underline;
 	}
   @media (min-width : 1200px) {
-    h1 {
-      font-size: 4rem;
-    }
-    p {
-      font-size: 1rem;
-    }
-    a {
-      font-size: 1rem;
-    }
     .carousel_slides {
       width: 60%;
     }

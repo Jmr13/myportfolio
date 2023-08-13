@@ -7,16 +7,16 @@
    <div>
       <div class="header">
         <h1 class="year">{{ eduBackground.year }}</h1>
-        <h5 class="level">{{ eduBackground.level }}</h5>
+        <h4 class="level">{{ eduBackground.level }}</h4>
         <br />
       </div>
       <h4>
-        <pre>    ・{{ eduBackground.school }}・</pre>
+        <pre>・{{ eduBackground.school }}・</pre>
       </h4>
       <br />
-      <h5 v-if="eduBackground.course">
-        <pre>        {{ eduBackground.course }}</pre>
-      </h5>
+      <h4 v-if="eduBackground.course">
+        <pre>   {{ eduBackground.course }}</pre>
+      </h4>
       <br />
       <hr />
    </div>
@@ -58,15 +58,6 @@
   @media (min-width : 1200px) {
     hr {
       height: 1vh;
-    }
-    .year {
-      font-size: 4rem;
-    }
-    .level {
-      font-size: 2rem;
-    }
-    pre {
-      font-size: 2rem;
     }
   }
 </style>

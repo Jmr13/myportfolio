@@ -21,9 +21,4 @@
     background-color: var(--secondary-color);
     margin: 10vw 0;
   }
-  @media (min-width : 1200px) {
-    .title h1 {
-      font-size: 6rem;
-    }
-  }
 </style>

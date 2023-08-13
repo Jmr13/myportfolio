@@ -59,12 +59,12 @@
     color: var(--primary-color);
     transition: all 0.5s ease-in-out;
   }
+  nav a h5 {
+    white-space: nowrap;
+    font-size: 1rem;
+  }
   nav a i {
     font-size: 2rem;
-  }
-  nav a h5 {
-    font-size: 0.75rem;
-    white-space: nowrap;
   }
   .router-link-active {
     background-color: var(--secondary-color);
@@ -81,16 +81,16 @@
     fill: var(--primary-color);
     text-shadow: var(--shadow);
   }
-  @media (min-width : 1200px) {
+  @media (min-width : 768px) {
     nav {
       right: 10vw;
       left: 10vw;
     }
-    nav a i {
-      font-size: 3rem;
-    }
-    nav a h5 {
-      font-size: 1rem;
+  }
+  @media (min-width : 1200px) {
+    nav {
+      right: 10vw;
+      left: 10vw;
     }
   }
   @media (min-width : 1600px) {

@@ -63,7 +63,6 @@
   	background-color: var(--primary-color);
   	color: var(--secondary-color);
   	font-family: 'Source Serif Pro', serif;
-    font-weight: 400;
     padding: 2vh 5vw 20vh 5vw;
   }
   button, a{
@@ -72,6 +71,31 @@
   hr {
     border: 1px solid white;
     background-color: white;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  h5 {
+    font-size: 0.5rem;
+  }
+  h6 {
+    font-size: 0.25rem;
+  }
+  a {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  label, input, textarea {
+    font-size: 1.5rem;
   }
   @media (min-width : 768px) {
     body {

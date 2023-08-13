@@ -10,7 +10,7 @@
       <h5 class="year">{{ certificationBackground.date }}</h5>
       <br />
       <br />
-      <p>{{ certificationBackground.title }}</p>
+      <h3>{{ certificationBackground.title }}</h3>
       <br />
       <a v-if="certificationBackground.link" :href="certificationBackground.link" target="_blank">{{ certificationBackground.link }}</a>
       <br />
@@ -65,12 +65,6 @@
     }
     .container {
       width: 40%;
-    }
-    h5 {
-      font-size: 1rem;
-    }
-    a {
-      font-size: 1rem;
     }
   }
 </style>

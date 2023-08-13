@@ -15,9 +15,9 @@
           <br />
           <a :href="experienceBackground.link">{{ experienceBackground.company }}</a>
           <br />
-          <p v-for="description in experienceBackground.description">
+          <h4 v-for="description in experienceBackground.description">
             ・{{ description }}
-          </p>
+          </h4>
         </div>
       </div>
     </div>
@@ -75,12 +75,6 @@
     .line {
       width: 16px;
     }
-    h2 {
-      font-size: 4rem;
-    }
-    a , p{
-      font-size: 2rem;
-    }
   }
   @media (min-width : 1600px) {
     .circle {
@@ -95,12 +89,6 @@
     }
     .line {
       width: 16px;
-    }
-    h2 {
-      font-size: 5rem;
-    }
-    a , h5{
-      font-size: 2.5rem;
     }
   }
 </style>

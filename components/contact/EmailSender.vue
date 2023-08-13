@@ -55,11 +55,8 @@
     border: 2px solid var(--secondary-color);
     border-radius: var(--rounded);
     padding: 1vh 2vw;
-    font-family: 'Source Serif Pro', serif;
-    font-weight: 400;
   }
   .form label {
-    font-size: 1.5rem;
     font-weight: bold;
   }
   .form div {
@@ -82,12 +79,6 @@
     }
     .form {
       gap: 5vh 0;
-    }
-    .form input , .form textarea {
-      font-size: 2rem;
-    }
-    .form label {
-      font-size: 3rem;
     }
   }
 </style>

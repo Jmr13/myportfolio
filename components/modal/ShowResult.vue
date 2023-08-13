@@ -34,9 +34,6 @@
     padding: 5vh 5vw;
     border-radius: 20px;
   }
-  i {
-    font-size: 10rem;
-  }
   button {
     background-color: var(--secondary-color);
     color: var(--primary-color);

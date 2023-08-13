@@ -10,8 +10,8 @@
         <i :class="platform.icon"></i>
       </div>
       <div class="details">
-        <h5>{{ platform.title }}</h5>
-        <p>{{ platform.details }}</p>
+        <h6>{{ platform.title }}</h6>
+        <h5>{{ platform.details }}</h5>
       </div>
     </a>
   </div>
@@ -21,6 +21,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     gap: 2vh 2vw;
   }
   .container {
@@ -32,7 +33,6 @@
     cursor: pointer;
   }
   i {
-    font-size: 2rem;
     margin-right: 2vw;
   }
   .details {
@@ -42,16 +42,5 @@
     flex-grow: 1;
     gap: 1vh 0;
     cursor: pointer;
-  }
-  @media (min-width : 1200px) {
-    i {
-      font-size: 3rem;
-    }
-    h5 {
-      font-size: 2rem;
-    }
-    p {
-      font-size: 2rem;
-    }
   }
 </style>
