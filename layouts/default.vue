@@ -10,7 +10,7 @@
 </script>
 <template>
   <div>
-    <!--<LoaderLogo v-if="showHideSpinner" />-->
+    <LoaderLogo v-if="showHideSpinner" />
     <HeaderLogo />
     <SettingsThemeSwitcher />
     <slot />
