@@ -10,13 +10,13 @@
         <h3 class="level">{{ eduBackground.level }}</h3>
         <br />
       </div>
-      <h2>
+      <h3>
         <pre>  ・{{ eduBackground.school }}・</pre>
-      </h2>
+      </h3>
       <br />
-      <h2 v-if="eduBackground.course">
+      <h3 v-if="eduBackground.course">
         <pre>     {{ eduBackground.course }}</pre>
-      </h2>
+      </h3>
       <br />
       <hr />
    </div>
@@ -62,9 +62,6 @@
     h1 {
       font-size: 3rem;
     }
-    h2 {
-      font-size: 1.5rem;
-    }
     h3 {
       font-size: 1rem;
     }
@@ -77,9 +74,6 @@
     h1 {
       font-size: 3.5rem;
     }
-    h2 {
-      font-size: 2rem;
-    }
     h3 {
       font-size: 1.5rem;
     }
@@ -91,9 +85,6 @@
     }
     h1 {
       font-size: 4rem;
-    }
-    h2 {
-      font-size: 2.5rem;
     }
     h3 {
       font-size: 2rem;
