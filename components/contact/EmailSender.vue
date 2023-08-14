@@ -52,10 +52,12 @@
     gap: 2vh 0;
   }
   .form input , .form textarea {
+    background-color: var(--primary-color);
     border: 2px solid var(--secondary-color);
     padding: 1vh 2vw;
     font-family: 'Source Serif Pro', serif;
     font-weight: 400;
+    color: var(--secondary-color);
   }
   .form label {
     font-size: 1.5rem;
