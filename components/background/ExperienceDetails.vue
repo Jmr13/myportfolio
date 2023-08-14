@@ -61,6 +61,9 @@
   p {
     margin-top: 2vh;
   }
+  h1 {
+      font-size: 2rem;
+  }
   @media (min-width : 768px) {
     h1 {
       font-size: 3rem;
