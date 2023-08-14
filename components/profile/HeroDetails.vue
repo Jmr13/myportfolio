@@ -10,9 +10,6 @@
     <h2>
       ・designer/coder・
     </h2>
-    <h2>
-      ・frontend developer・
-    </h2>
     <br />
     <p>
       I am a passionate developer with a strong foundation in design. Having a tremendous curiosity drives me to learn and explore things
