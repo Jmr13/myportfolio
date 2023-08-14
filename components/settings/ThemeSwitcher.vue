@@ -18,7 +18,6 @@
   select {
     all: unset;
     text-align: center;
-    border-radius: var(--rounded);
     padding: 1vh 2vw;
     font-family: 'Source Serif Pro', serif;
     background-color: var(--secondary-color);

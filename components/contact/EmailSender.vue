@@ -53,7 +53,6 @@
   }
   .form input , .form textarea {
     border: 2px solid var(--secondary-color);
-    border-radius: var(--rounded);
     padding: 1vh 2vw;
     font-family: 'Source Serif Pro', serif;
     font-weight: 400;

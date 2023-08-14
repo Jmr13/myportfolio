@@ -33,26 +33,52 @@
     background-color: var(--secondary-color);
     color: var(--primary-color);
     padding: 1vh 0;
-    border-radius: var(--rounded);
     text-shadow: var(--shadow);
   }
   img {
     width: 100%;
-    border-radius: var(--rounded);
     outline: 2px solid 	var(--secondary-color);
+  }
+  @media (min-width : 768px) {
+    div h1 {
+      font-size: 3rem;
+    }
+    h2 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+    img {
+      width: 50%;
+    }
   }
   @media (min-width : 1200px) {
     div h1 {
-      font-size: 6rem;
+      font-size: 4rem;
     }
     h2 {
-      font-size: 4rem;
+      font-size: 3rem;
     }
     p {
       font-size: 2rem;
     }
     img {
-      width: 50%;
+      width: 40%;
+    }
+  }
+  @media (min-width : 1600px) {
+    div h1 {
+      font-size: 5rem;
+    }
+    h2 {
+      font-size: 4rem;
+    }
+    p {
+      font-size: 3rem;
+    }
+    img {
+      width: 30%;
     }
   }
 </style>

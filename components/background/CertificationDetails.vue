@@ -28,7 +28,6 @@
     position: relative;
     padding: 1vh 2vw;
     outline: 2px solid var(--secondary-color);
-    border-radius: var(--rounded);
     text-align: center;
     margin: 1vh 2vw;
   }
@@ -45,7 +44,6 @@
   }
   img {
     width: 100%;
-    border-radius: var(--rounded);
   }
   p {
     display: block;
@@ -59,18 +57,28 @@
     overflow: hidden;
     text-overflow: ellipsis;
   }
-  @media (min-width : 1200px) {
-    .parentContainer {
-      gap: 5vh 2vw;
+  @media (min-width : 768px) {
+    h5 {
+      font-size: 2rem;
     }
+    p, a {
+      font-size: 1.5rem;
+    }
+  }
+  @media (min-width : 1200px) {
     .container {
-      width: 40%;
+      width: 70%;
     }
     h5 {
-      font-size: 1rem;
+      font-size: 2.5rem;
     }
-    a {
-      font-size: 1rem;
+    p, a {
+      font-size: 2rem;
+    }
+  }
+  @media (min-width : 1600px) {
+    .container {
+      width: 60%;
     }
   }
 </style>

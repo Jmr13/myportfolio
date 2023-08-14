@@ -32,7 +32,6 @@
     width: 80vw;
     margin-top: 10%;
     padding: 5vh 5vw;
-    border-radius: 20px;
   }
   i {
     font-size: 10rem;
@@ -42,7 +41,6 @@
     color: var(--primary-color);
     padding: 2vh 2vw;
     font-weight: bold;
-    border-radius: var(--rounded);
   }
   .close {
     margin: 10% 0 0 16px;

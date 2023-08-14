@@ -21,9 +21,19 @@
     background-color: var(--secondary-color);
     margin: 10vw 0;
   }
+  @media (min-width : 768px) {
+    .title h1 {
+      font-size: 3rem;
+    }
+  }
   @media (min-width : 1200px) {
     .title h1 {
-      font-size: 6rem;
+      font-size: 4rem;
+    }
+  }
+  @media (min-width : 1600px) {
+    .title h1 {
+      font-size: 5rem;
     }
   }
 </style>

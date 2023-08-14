@@ -84,4 +84,14 @@
     margin: auto;
     fill: var(--secondary-color);
   }
+  @media (min-width : 768px) {
+    svg {
+      height: 15vh;
+    }
+  }
+  @media (min-width : 1200px) {
+    svg {
+      height: 20vh;
+    }
+  }
 </style>

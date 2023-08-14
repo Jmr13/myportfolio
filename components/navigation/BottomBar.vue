@@ -34,7 +34,6 @@
     margin: 0 2vw 1vh 2vw;
     padding: 1vw 2vw;
     gap: 0 2vw;
-    border-radius: var(--rounded);
     z-index: 10;
     outline: 2px solid 	var(--secondary-color);
     background-color: var(--primary-color);
@@ -50,7 +49,6 @@
     color: var(--secondary-color);
     cursor: pointer;
     background-color: var(--color);
-    border-radius: var(--rounded);
     font-family: 'Source Serif Pro', serif;
     font-weight: 900;
   }
@@ -81,11 +79,16 @@
     fill: var(--primary-color);
     text-shadow: var(--shadow);
   }
-  @media (min-width : 1200px) {
+  @media (min-width : 768px) {
     nav {
-      right: 10vw;
-      left: 10vw;
+      right: 20vw;
+      left: 20vw;
     }
+    nav a i {
+      font-size: 2rem;
+    }
+  }
+  @media (min-width : 1200px) {
     nav a i {
       font-size: 3rem;
     }
@@ -94,9 +97,8 @@
     }
   }
   @media (min-width : 1600px) {
-    nav {
-      right: 20vw;
-      left: 20vw;
+    nav a i {
+      font-size: 4rem;
     }
   }
 </style>

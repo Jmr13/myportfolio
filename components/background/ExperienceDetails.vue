@@ -11,7 +11,7 @@
           <div class="line"></div>
         </div>
         <div>
-          <h2>{{ experienceBackground.role }}</h2>
+          <h1>{{ experienceBackground.role }}</h1>
           <br />
           <a :href="experienceBackground.link">{{ experienceBackground.company }}</a>
           <br />
@@ -38,7 +38,6 @@
     width: 30px;
     height: 30px;
     margin: auto;
-    border-radius: 25px;
     background-color: var(--secondary-color);
   }
   .circle::before {
@@ -57,15 +56,26 @@
   }
   a {
     text-decoration-line: underline;
+    cursor: pointer;
   }
   p {
     margin-top: 2vh;
+  }
+  @media (min-width : 768px) {
+    h1 {
+      font-size: 3rem;
+    }
+    a {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
   }
   @media (min-width : 1200px) {
     .circle {
       width: 60px;
       height: 60px;
-      border-radius: 50px;
     }
     .circle::before {
       content: '';
@@ -83,10 +93,18 @@
     }
   }
   @media (min-width : 1600px) {
+    h1 {
+      font-size: 4rem;
+    }
+    a {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 2rem;
+    }
     .circle {
       width: 60px;
       height: 60px;
-      border-radius: 50px;
     }
     .circle::before {
       content: '';

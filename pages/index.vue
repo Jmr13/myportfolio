@@ -16,7 +16,6 @@
   	--primary-color: white;
   	--secondary-color: #252525;
   	--shadow: -4px 3px 2px rgba(0,0,0,0.3);
-  	--rounded: 2vw;
   }
   .dark-mode {
   	--primary-color: #252525;

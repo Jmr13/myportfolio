@@ -19,7 +19,8 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@nuxtjs/device',
     'nuxt-mailer',
-    '@hypernym/nuxt-anime'
+    '@hypernym/nuxt-anime',
+    'nuxt-swiper'
   ],
   runtimeConfig: {
     mailerUser: process.env.NUXT_MAILER_USER ,

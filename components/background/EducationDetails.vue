@@ -4,30 +4,31 @@
   })
 </script>
 <template>
-   <div>
+   <div class="parentContainer">
       <div class="header">
         <h1 class="year">{{ eduBackground.year }}</h1>
-        <h5 class="level">{{ eduBackground.level }}</h5>
+        <h3 class="level">{{ eduBackground.level }}</h3>
         <br />
       </div>
-      <h4>
-        <pre>    ・{{ eduBackground.school }}・</pre>
-      </h4>
+      <h2>
+        <pre>  ・{{ eduBackground.school }}・</pre>
+      </h2>
       <br />
-      <h5 v-if="eduBackground.course">
-        <pre>        {{ eduBackground.course }}</pre>
-      </h5>
+      <h2 v-if="eduBackground.course">
+        <pre>     {{ eduBackground.course }}</pre>
+      </h2>
       <br />
       <hr />
    </div>
 </template>
 <style scoped>
-  div {
+  .parentContainer {
     color: var(--secondary-color);
     margin: 2vh 0;
   }
   hr {
     height: 0.25vh;
+    margin: 2vh 0;
     background-color: var(--secondary-color);
     border: none;
   }
@@ -43,7 +44,6 @@
     background-color: var(--secondary-color);
     padding-left: 2vw;
     margin-right: 2vw;
-    border-radius: var(--rounded);
   }
   .year {
     flex-grow: 1;
@@ -52,20 +52,50 @@
     padding: 1vh 2vw;
     background-color: var(--secondary-color);
     color: var(--primary-color);
-    border-radius: var(--rounded);
     text-shadow: var(--shadow);
+  }
+  @media (min-width : 768px) {
+    hr {
+      height: 2vh;
+      margin: 6vh 0;
+    }
+    h1 {
+      font-size: 3rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+    h3 {
+      font-size: 1rem;
+    }
   }
   @media (min-width : 1200px) {
     hr {
-      height: 1vh;
+      height: 3vh;
+      margin: 6vh 0;
     }
-    .year {
-      font-size: 4rem;
+    h1 {
+      font-size: 3.5rem;
     }
-    .level {
+    h2 {
       font-size: 2rem;
     }
-    pre {
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+  @media (min-width : 1600px) {
+    hr {
+      height: 4vh;
+      margin: 6vh 0;
+    }
+    h1 {
+      font-size: 4rem;
+    }
+    h2 {
+      font-size: 2.5rem;
+    }
+    h3 {
       font-size: 2rem;
     }
   }

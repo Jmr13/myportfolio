@@ -28,7 +28,6 @@
     align-items: center;
     border: 2px solid var(--secondary-color);
     padding: 1vh 2vw;
-    border-radius: var(--rounded);
     cursor: pointer;
   }
   i {
