@@ -54,6 +54,9 @@
     color: var(--primary-color);
     text-shadow: var(--shadow);
   }
+  h3 {
+    font-size: 0.75rem;
+  }
   @media (min-width : 768px) {
     hr {
       height: 2vh;
