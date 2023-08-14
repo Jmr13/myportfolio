@@ -29,6 +29,10 @@
     --primary-color: #000000;
   	--secondary-color: #66ff66;
   }
+  .aqua-mode {
+    --primary-color: #090e2f;
+    --secondary-color: #34b5ff;
+  }
   ::-moz-selection {
     color: var(--primary-color);
     background-color: var(--secondary-color);
