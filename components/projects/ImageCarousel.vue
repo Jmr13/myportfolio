@@ -6,13 +6,19 @@
 <template>
   <div class="container">
     <h1>・{{ project.name }}・</h1>
+    <div class="techstack">
+      <p v-for="tech in project.techs">
+        {{ tech }}
+      </p>
+    </div>
     <p>{{ project.description }}</p>
     <br />
 	<div class="link">
-		<a v-if="project.link"  :href="project.link" target="_blank" class="link">{{ project.link }}</a>
+		<a v-if="project.link"  :href="project.link" target="_blank" class="link">{{ project.linkname }}</a>
 	</div>
     <br />
 	<swiper
+	  v-if="project.images"
 		:slidesPerView="1"
 		:breakpoints="{
 		'768': {
@@ -33,6 +39,8 @@
 			<img :src="image" alt="Screenshots" />
 		</swiper-slide>
 	</swiper>
+	<iframe v-if="!project.images" :src="project.link" :title="project.name">
+  </iframe>
   </div>
 </template>
 <style scoped>
@@ -60,6 +68,24 @@
 	img {
 		border: 1px solid var(--secondary-color);
 		padding: 1vh;
+	}
+	.techstack {
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  flex-wrap: wrap;
+	  gap: 1vh 4vw;
+	  margin: 2vh 0;
+	}
+	.techstack p {
+	  background-color: var(--secondary-color);
+	  color: var(--primary-color);
+    padding: 1vh 3vw;
+    font-weight: bold;
+	}
+	iframe {
+	  height: 80vh;
+	  width: 100%;
 	}
 	@media (min-width : 768px) {
 		h1 {
