@@ -53,6 +53,13 @@
   ]
   
   const webinarSeminarBackgrounds = [
+    {
+      id: 1, 
+      title: 'WordPress Fundamentals - Content Management System (CMS)' , 
+      date: 'August 2023' ,
+      source: '/background/Wordpress_Fundamentals.png' ,
+      link: 'https://tinyurl.com/2h93hbk3'
+    },
     { 
       id: 1, 
       title: 'Data mining through Jamovi statistical tool' , 
