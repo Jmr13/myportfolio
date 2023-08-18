@@ -10,15 +10,10 @@
 </script>
 <template>
   <div>
-    <LoaderLogo v-if="showHideSpinner" />
-    <HeaderLogo v-cloak />
-    <SettingsThemeSwitcher v-cloak />
-    <slot v-cloak />
-    <NavigationBottomBar v-cloak />
+    <LoaderLogo v-show="showHideSpinner" />
+    <HeaderLogo v-show="!showHideSpinner" />
+    <SettingsThemeSwitcher v-show="!showHideSpinner" />
+    <slot v-if="!showHideSpinner" />
+    <NavigationBottomBar v-show="!showHideSpinner" />
   </div>
 </template>
-<style scoped>
-  [v-cloak] {
-    display: none
-  }
-</style>
