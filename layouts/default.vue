@@ -13,7 +13,7 @@
     <LoaderLogo v-show="showHideSpinner" />
     <HeaderLogo v-show="!showHideSpinner" />
     <SettingsThemeSwitcher v-show="!showHideSpinner" />
-    <slot v-if="!showHideSpinner" />
+    <slot />
     <NavigationBottomBar v-show="!showHideSpinner" />
   </div>
 </template>
