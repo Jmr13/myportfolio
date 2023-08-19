@@ -5,12 +5,15 @@
     showHideSpinner.value = true;
   })
   onMounted(() => {
-    setTimeout(() => showHideSpinner.value = false, 3000);
+    showHideSpinner.value = false
+    //setTimeout(() => showHideSpinner.value = false, 3000);
   })
 </script>
 <template>
   <div>
+    <!--
     <LoaderLogo v-show="showHideSpinner" />
+    -->
     <HeaderLogo v-show="!showHideSpinner" />
     <SettingsThemeSwitcher v-show="!showHideSpinner" />
     <slot v-if="!showHideSpinner" />

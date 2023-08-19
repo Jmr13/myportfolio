@@ -9,6 +9,8 @@
 <template>
   <NuxtLayout>
     <ProfileHeroDetails />
+    <HeaderTitle title="technologies" />
+    <ProfileTechnologies />
   </NuxtLayout>
 </template>
 <style>
