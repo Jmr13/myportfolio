@@ -5,7 +5,6 @@
     showHideSpinner.value = true;
   })
   onMounted(() => {
-    showHideSpinner.value = false
     setTimeout(() => showHideSpinner.value = false, 3000);
   })
 </script>
