@@ -360,4 +360,14 @@
       height: 0%;
     }
   }
+  @media (min-width : 768px) {
+    .icon svg {
+      height: 6rem;
+      width: 6rem;
+    }
+    .curtain svg {
+      height: 6rem;
+      width: 6rem;
+    }
+  }
 </style>
