@@ -36,10 +36,10 @@
 		}"
 	>
 		<swiper-slide v-for="image in project.images">
-			<img :src="image" alt="Screenshots" />
+			<img :src="image" alt="Screenshots" loading="lazy" />
 		</swiper-slide>
 	</swiper>
-	<iframe v-if="!project.images" :src="project.link" :title="project.name">
+	<iframe v-if="!project.images" :src="project.link" :title="project.name" loading="lazy">
   </iframe>
   </div>
 </template>

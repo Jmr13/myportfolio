@@ -6,7 +6,7 @@
 <template>
   <div class="parentContainer">
     <div v-for="certificationBackground in certificationBackgrounds" :key="certificationBackground.id" class="container">
-      <img :src="certificationBackground.source" alt="certificationBackground.title" loading="lazy"/>
+      <img :src="certificationBackground.source" alt="certificationBackground.title" loading="lazy" />
       <h5 class="year">{{ certificationBackground.date }}</h5>
       <br />
       <br />

@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="profilepicture">
-      <img src="/index/ProfilePic.png" alt="Profile" />
+      <img src="/index/ProfilePic.png" alt="Profile" loading="lazy" />
       <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600.000000 600.000000" preserveAspectRatio="xMidYMid meet">
       <g transform="translate(0.000000,600.000000) scale(0.100000,-0.100000)" stroke="none">
       <path d="M2860 5654 c-128 -12 -341 -48 -469 -79 -280 -69 -591 -207 -837
