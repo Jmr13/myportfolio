@@ -99,6 +99,27 @@
     },
     {
       id: 5, 
+      name: 'Just another online exam(2)' , 
+      description: 'Static website built with CSS' ,
+      techs: [
+        'HTML/CSS'
+      ],
+      link: 'https://jrfe-gamayan-task1.netlify.app/',
+      linkname: 'Just another online exam(2)'
+    },
+    {
+      id: 6, 
+      name: 'Just another online exam(3)' , 
+      description: 'Todo App using Local Storage' ,
+      techs: [
+        'HTML/CSS',
+        'Javascript'
+      ],
+      link: 'https://jrfe-gamayan-task2.netlify.app/',
+      linkname: 'Just another online exam(3)'
+    },
+    {
+      id: 7, 
       name: 'My Online Portfolio' , 
       description: 'My online portfolio built using NuxtJs. Might as well add it here' ,
       techs: [
