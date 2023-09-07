@@ -53,12 +53,12 @@
   ]
   
   const webinarSeminarBackgrounds = [
-    {
-      id: 1, 
-      title: 'WordPress Fundamentals - Content Management System (CMS)' , 
-      date: 'August 2023' ,
-      source: '/background/Wordpress_Fundamentals.png' ,
-      link: 'https://tinyurl.com/2h93hbk3'
+    { 
+      id: 0, 
+      title: 'Hacking Azure AI' , 
+      date: 'September 2023' ,
+      source: '/background/HackingAzureAI.webp' ,
+      link: ''
     },
     { 
       id: 1, 
@@ -212,7 +212,14 @@
       date: 'May 2023' ,
       source: '/background/FCC_DS&A.webp' ,
       link: 'https://tinyurl.com/yc2f3scx'
-    }
+    },
+    {
+      id: 2, 
+      title: 'WordPress Fundamentals - Content Management System (CMS)' , 
+      date: 'August 2023' ,
+      source: '/background/Wordpress_Fundamentals.png' ,
+      link: ''
+    },
   ]
 </script>
 <template>
