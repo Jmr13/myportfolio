@@ -220,6 +220,13 @@
       source: '/background/Wordpress_Fundamentals.png' ,
       link: ''
     },
+    {
+      id: 3, 
+      title: 'Sololearn Java Certification' , 
+      date: 'September 2023' ,
+      source: '/background/Sololearn_Java.png' ,
+      link: ''
+    }
   ]
 </script>
 <template>
