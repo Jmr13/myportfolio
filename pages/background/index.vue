@@ -13,33 +13,24 @@
       level: 'College' ,
       course: 'Bachelor of Science in Computer Science', 
       year: '2019-2023'
-    },
-    { 
-      id: 2, 
-      school: 'Bagong Barrio Senior High School' , 
-      level: 'Senior HS' ,
-      course: 'ICT major in Animation and Illustration', 
-      year: '2017-2019'
-    },
-    { 
-      id: 3, 
-      school: 'Bagong Barrio National High School' , 
-      level: 'Junior HS' ,
-      course: '', 
-      year: '2013-2017'
-    },
-    { 
-      id: 4, 
-      school: 'Bagong Barrio Elementary School' , 
-      level: 'Primary' ,
-      course: '', 
-      year: '2007-2013'
     }
   ]
   
   const experienceBackgrounds = [
     { 
       id: 1, 
+      role: 'Application Systems Engineer Trainee' , 
+      company: 'Fujitsu Global Delivery Center Philippines' ,
+      description: [
+        'Developed a scalable, efficient frontend architecture using Next.js, reducing manual invoice processing errors and increasing efficiency through AI on Google Cloud Platform.',
+        'Deployed the client-side application to Google Cloud Run via Google Cloud Build, ensuring seamless integration with cloud infrastructure.',
+        'Executed end-to-end tests for the client-side, identifying and resolving issues to meet functional standards and enhance application reliability.',
+        'Supported the training and evaluation of Document AI on Google Cloud Platform, enhancing accuracy in automated document processing.'
+      ],
+      link: 'https://www.facebook.com/FujitsuPHGDC'
+    },
+    { 
+      id: 2, 
       role: 'Web Developer(Internship)' , 
       company: 'Oikos Technologies' ,
       description: [
@@ -207,6 +198,13 @@
   
   const certificationBackgrounds = [
     { 
+      id: 0, 
+      title: 'Microsoft Azure Fundamentals', 
+      date: 'June 2024' ,
+      source: '/background/MicrosoftAzureFund.jpg' ,
+      link: 'https://tinyurl.com/se4c3u4t'
+    },
+    { 
       id: 1, 
       title: 'JavaScript Algorithms and Data Structures certification from freeCodeCamp.org', 
       date: 'May 2023' ,
@@ -231,10 +229,10 @@
 </script>
 <template>
   <NuxtLayout>
-    <HeaderTitle title="education" />
-    <BackgroundEducationDetails v-for="eduBackground in eduBackgrounds" :key="eduBackground.id" :eduBackground="eduBackground" />
     <HeaderTitle title="experience" />
     <BackgroundExperienceDetails v-for="experienceBackground in experienceBackgrounds" :key="experienceBackground.id" :experienceBackground="experienceBackground" />
+    <HeaderTitle title="education" />
+    <BackgroundEducationDetails v-for="eduBackground in eduBackgrounds" :key="eduBackground.id" :eduBackground="eduBackground" />
     <HeaderTitle title="certifications" />
     <BackgroundCertificationDetails :certificationBackgrounds="certificationBackgrounds" />
     <HeaderTitle title="awards" />

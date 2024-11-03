@@ -118,19 +118,6 @@
       link: 'https://jrfe-gamayan-task2.netlify.app/',
       linkname: 'Just another online exam(3)'
     },
-    {
-      id: 7, 
-      name: 'My Online Portfolio' , 
-      description: 'My online portfolio built using NuxtJs. Might as well add it here' ,
-      techs: [
-        'HTML/CSS',
-        'NuxtJS',
-        'Nuxt Mailer',
-        'Swiper'
-      ],
-      link: 'https://jomar-gamayan-portfolio.netlify.app/',
-      linkname: 'Open my portfolio again'
-    },
   ]
 </script>
 <template>
