@@ -85,7 +85,7 @@
   }
   @media (min-width : 1200px) {
     body {
-      padding: 4vh 10vw 40vh 10vw;
+      padding: 4vh 15vw 40vh 15vw;
     }
   }
 </style>

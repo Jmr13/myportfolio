@@ -15,6 +15,7 @@ export default defineNuxtConfig({
       ]
     }
   },
+
   modules: [
     '@nuxtjs/color-mode',
     '@nuxtjs/device',
@@ -22,9 +23,12 @@ export default defineNuxtConfig({
     '@hypernym/nuxt-anime',
     'nuxt-swiper'
   ],
+
   runtimeConfig: {
     mailerUser: process.env.NUXT_MAILER_USER ,
     mailerPass: process.env.NUXT_MAILER_PASS,
     mailerLog: process.env.NUXT_MAILER_LOG,
-  }
+  },
+
+  compatibilityDate: '2024-11-16'
 })

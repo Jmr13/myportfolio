@@ -89,11 +89,15 @@
     }
   }
   @media (min-width : 1200px) {
+    nav {
+      right: 30vw;
+      left: 30vw;
+    }
     nav a i {
-      font-size: 3rem;
+      font-size: 2rem;
     }
     nav a h5 {
-      font-size: 1rem;
+      font-size: 0.75rem;
     }
   }
   @media (min-width : 1600px) {
