@@ -87,4 +87,37 @@
 	  height: 80vh;
 	  width: 100%;
 	}
+	@media (min-width : 768px) {
+		h1 {
+			font-size: 3rem;
+		}
+		p {
+			font-size: 1.5rem;
+		}
+		a {
+			font-size: 1rem;
+		}
+	}
+	@media (min-width : 1200px) {
+		h1 {
+			font-size: 3.5rem;
+		}
+		h2 {
+			font-size: 2rem;
+		}
+		h3 {
+			font-size: 1.5rem;
+		}
+	}
+	@media (min-width : 1600px) {
+		h1 {
+			font-size: 4rem;
+		}
+		h2 {
+			font-size: 2.5rem;
+		}
+		h3 {
+			font-size: 2rem;
+		}
+	}
 </style>

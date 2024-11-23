@@ -54,10 +54,19 @@
     color: var(--primary-color);
     text-shadow: var(--shadow);
   }
+  h3 {
+    font-size: 0.75rem;
+  }
   @media (min-width : 768px) {
     hr {
       height: 2vh;
       margin: 6vh 0;
+    }
+    h1 {
+      font-size: 3rem;
+    }
+    h3 {
+      font-size: 1rem;
     }
   }
   @media (min-width : 1200px) {
@@ -65,11 +74,23 @@
       height: 3vh;
       margin: 6vh 0;
     }
+    h1 {
+      font-size: 3.5rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+    }
   }
   @media (min-width : 1600px) {
     hr {
       height: 4vh;
       margin: 6vh 0;
+    }
+    h1 {
+      font-size: 4rem;
+    }
+    h3 {
+      font-size: 2rem;
     }
   }
 </style>
