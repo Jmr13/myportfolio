@@ -3,34 +3,39 @@
     certificationBackgrounds: Object
   })
 </script>
+
 <template>
   <div class="parentContainer">
     <div v-for="certificationBackground in certificationBackgrounds" :key="certificationBackground.id" class="container">
       <img :src="certificationBackground.source" alt="certificationBackground.title" loading="lazy" />
       <h5 class="year">{{ certificationBackground.date }}</h5>
-      <br />
-      <br />
+      <hr />
       <p>{{ certificationBackground.title }}</p>
-      <br />
+      <hr />
       <a v-if="certificationBackground.link" :href="certificationBackground.link" target="_blank">{{ certificationBackground.link }}</a>
-      <br />
+      <hr />
     </div>
   </div>
 </template>
+
 <style scoped>
   .parentContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     overflow: none;
+    width: 100%;
   }
+
   .container {
     position: relative;
-    padding: 1vh 2vw;
+    padding: 2vh 3vw;
     outline: 2px solid var(--secondary-color);
     text-align: center;
-    margin: 1vh 2vw;
+    margin: 2vh 3vw;
+    width: 100%; /* Default to full width */
   }
+
   .year {
     position: absolute;
     top: 0;
@@ -41,44 +46,89 @@
     border-top-right-radius: var(--rounded);
     padding: 1vh 2vh;
     font-weight: bold;
+    font-size: 1.5rem;
   }
+
   img {
     width: 100%;
+    height: auto;
   }
+
+  hr {
+    border: 0;
+    border-top: 1px solid var(--secondary-color);
+    margin: 1.5vh 0;
+    width: 100%;
+  }
+
   p {
-    display: block;
-    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5;
   }
+
   a {
-    display: block;
-    text-align: center;
-    text-decoration: underline;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    font-size: 1rem;
+    color: var(--primary-color);
+    text-decoration: none;
   }
-  @media (min-width : 768px) {
-    h5 {
-      font-size: 2rem;
+
+  /* Styles for 768px and smaller viewports */
+  @media (max-width: 768px) {
+    .container {
+      width: 100%; /* Full width on small screens */
+      padding: 2vh 3vw;
     }
+
+    .year {
+      font-size: 1.2rem;
+    }
+
     p, a {
+      font-size: 1rem;
+    }
+
+    hr {
+      margin: 1vh 0;
+    }
+  }
+
+  /* Styles for 1200px and larger viewports */
+  @media (min-width: 1200px) {
+    .container {
+      width: 70%; /* 70% width on screens wider than 1200px */
+      padding: 2vh 3vw;
+    }
+
+    .year {
       font-size: 1.5rem;
     }
-  }
-  @media (min-width : 1200px) {
-    .container {
-      width: 70%;
-    }
-    h5 {
-      font-size: 2.5rem;
-    }
+
     p, a {
-      font-size: 2rem;
+      font-size: 1.2rem;
+    }
+
+    hr {
+      margin: 1.5vh 0;
     }
   }
-  @media (min-width : 1600px) {
+
+  /* Styles for 1600px and larger viewports */
+  @media (min-width: 1600px) {
     .container {
-      width: 60%;
+      width: 60%; /* 60% width on screens wider than 1600px */
+      padding: 2vh 3vw;
+    }
+
+    .year {
+      font-size: 1.7rem;
+    }
+
+    p, a {
+      font-size: 1.3rem;
+    }
+
+    hr {
+      margin: 2vh 0;
     }
   }
 </style>

@@ -42,15 +42,4 @@
     gap: 1vh 0;
     cursor: pointer;
   }
-  @media (min-width : 1200px) {
-    i {
-      font-size: 3rem;
-    }
-    h5 {
-      font-size: 2rem;
-    }
-    p {
-      font-size: 2rem;
-    }
-  }
 </style>

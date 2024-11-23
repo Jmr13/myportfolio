@@ -54,27 +54,6 @@
     background-color: var(--secondary-color);
     flex-grow: 1;
   }
-  a {
-    text-decoration-line: underline;
-    cursor: pointer;
-  }
-  p {
-    margin-top: 2vh;
-  }
-  h1 {
-      font-size: 2rem;
-  }
-  @media (min-width : 768px) {
-    h1 {
-      font-size: 3rem;
-    }
-    a {
-      font-size: 2rem;
-    }
-    p {
-      font-size: 1.5rem;
-    }
-  }
   @media (min-width : 1200px) {
     .circle {
       width: 60px;
@@ -88,23 +67,8 @@
     .line {
       width: 16px;
     }
-    h2 {
-      font-size: 4rem;
-    }
-    a , p{
-      font-size: 2rem;
-    }
   }
   @media (min-width : 1600px) {
-    h1 {
-      font-size: 4rem;
-    }
-    a {
-      font-size: 3rem;
-    }
-    p {
-      font-size: 2rem;
-    }
     .circle {
       width: 60px;
       height: 60px;
@@ -116,12 +80,6 @@
     }
     .line {
       width: 16px;
-    }
-    h2 {
-      font-size: 5rem;
-    }
-    a , h5{
-      font-size: 2.5rem;
     }
   }
 </style>
